@@ -1,0 +1,8 @@
+{
+    "markdown.marp.themes": [
+        "./themes/dracula.css",
+        "./themes/rose-pine.css",
+        "./themes/rose-pine-moon.css",
+        "./themes/rose-pine-dawn.css",
+    ],
+}
