@@ -14,7 +14,7 @@ style: |
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1rem;
     }
-    @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'
+    @import 'https://use.fontawesome.com/releases/v6.3.0/css/all.css';
 ---
 
 ![bg opacity:10%](media/ai-data-center.jpg)
@@ -36,6 +36,45 @@ AEM: 10371
 6. Distributed generation
 
 ---
+
+# <center> Stargate </center> 
+
+
+![bg left:70%](media/stargate.jpg)
+
+
+---
+
+# Specifications <i class="fa-solid fa-file-pen"></i>
+
+<div class="columns">
+<!-- Column 1 -->
+<div>
+
+| Specs      | Value          |
+|------------|----------------|
+| Investment | $500 billion   |
+| Location   | Abilene, Texas |
+| Company    | OpenAI & Oracle|
+| IT Capacity | 4.5 GW |
+
+Blackridge Research <sup>[3][ref3]</sup>
+
+</div>
+
+<!-- Column 2 -->
+<div>
+
+
+
+</div>
+</div>
+
+[ref3]: https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa "Blackridge Research - K.Vaishnavi Srivalli"
+
+---
+
+
 
 # Infrasound
 
