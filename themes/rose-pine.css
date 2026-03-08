@@ -136,3 +136,45 @@ marp-pre {
 .hljs-meta {
     color: var(--subtle);
 }
+
+/* Table styles - Gray with white text */
+table {
+    color: var(--text);
+    background-color: var(--surface);
+    border-collapse: collapse;
+    margin: 1em 0;
+    border: 1px solid var(--highlight-high);
+}
+
+th {
+    background-color: var(--overlay);
+    color: var(--text);
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--highlight-high);
+}
+
+td {
+    background-color: var(--surface);
+    color: var(--text);
+    padding: 10px 12px;
+    border: 1px solid var(--highlight-high);
+}
+
+/* Alternate row striping */
+tr:nth-child(even) td {
+    background-color: var(--highlight-low);
+}
+
+/* Hover effect */
+tr:hover td {
+    background-color: var(--highlight-muted);
+}
+
+/* Table caption styling */
+caption {
+    color: var(--subtle);
+    padding: 8px;
+    font-style: italic;
+}
