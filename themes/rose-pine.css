@@ -40,12 +40,15 @@ h1 {
     color: var(--rose);
     padding-bottom: 2mm;
     margin-bottom: 12mm;
+    font-size: 80pt;
 }
 h2 {
     color: var(--rose);
+    font-size: 40pt;
 }
 h3 {
     color: var(--rose);
+    font-size: 30pt;
 }
 h4 {
     color: var(--rose);
