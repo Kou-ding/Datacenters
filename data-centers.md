@@ -3,7 +3,7 @@ marp: true
 size: 16:9
 paginate: true
 theme: rose-pine
-footer: Data Centers
+footer: Post AI Era Datacenters Deepdive
 style: |
     .fa-twitter { color: aqua; }
     .fa-mastodon { color: purple; }
@@ -21,7 +21,7 @@ style: |
         left: 40px;
         right: 40px;
     }
-    @import 'https://use.fontawesome.com/releases/v6.3.0/css/all.css';
+    @import 'https://use.fontawesome.com/releases/v7.2.0/css/all.css';
 ---
 
 ![bg opacity:10%](media/ai-data-center.jpg)
@@ -33,7 +33,7 @@ AEM: 10371
 
 ---
 
-## <i class="fa-solid fa-list"></i> Contents 
+## Contents <i class="fa-solid fa-list"></i>
 
 1. [Infrasound](#infrasound) and sustained audible noise pollution
 2. Energy Analysis
@@ -45,28 +45,30 @@ AEM: 10371
 
 ---
 
-# Why the twist ?
+# Status Quo <i class="fa-solid fa-bomb"></i>
 
 ---
 
-## AI <i class="fa-brands fa-openai"></i>
+## Artificial Intelligence <i class="fa-brands fa-openai"></i>
 
 - There always were Datacenters
+- Many ambitious datacenter projects
 - Focus on new facilities and expansions post AI era
 - Push towards AGI
 - Technology replacing humans in most fields
+- note-to-self: why does the AI crisis seem to be different than technology not creating that many new jobs?
 
-![bg w:400 right:40%](media/AI-stock-img.png)
+![bg w:350 right:35%](media/AI-stock-img.png)
 
 ---
 
-# Main Data Centers
+# New Datacenters <i class="fa-solid fa-server"></i>
 
 The datacenters that are responsible for running and training the worlds most advanced LLMs.
 
 ---
 
-## List
+## Facilities <i class="fa-solid fa-industry"></i>
 
 | Datacenter | Location | Company | LLM |
 | ---------- | -------- | ------- | --- |
@@ -136,7 +138,7 @@ What happens when the city main line isn't enough for the
 
 ---
 
-### Diesel Engine Turbines
+## Diesel Engine Turbines <i class="fa-solid fa-gas-pump"></i>
 
 
 Monterey Park Data Center
@@ -163,16 +165,18 @@ Elon Musk's xAI data center Methane gas turbines.
 
 ---
 
-## Sustainable Pledges <i class="fa-solid fa-leaf"></i>
+## Sustainable Pledges <i class="fa-solid fa-solar-panel"></i>
 
 
 ---
 
-# Network topology optimization <i class="fa-solid fa-bolt"></i>
+# Networking <i class="fa-solid fa-network-wired"></i>
+
+Network topology optimization
 
 ---
 
-# Economic Analysis <i class="fa-solid fa-money-bill"></i>
+# Finance <i class="fa-solid fa-money-bill"></i>
 
 ---
 
@@ -183,7 +187,7 @@ Elon Musk's xAI data center Methane gas turbines.
 
 ---
 
-# Sociopolitical Aspect <i class="fa-solid fa-scale-balanced"></i>
+# Sociopolitical <i class="fa-solid fa-scale-balanced"></i>
 
 ---
 
@@ -195,7 +199,7 @@ https://intuitionlabs.ai/articles/openai-stargate-datacenter-details
 
 ---
 
-## Strategic Placement
+## Strategic Placement <i class="fa-solid fa-republican"></i>
 
 - On democrat states
 - Low backlash from the community
@@ -203,7 +207,7 @@ https://intuitionlabs.ai/articles/openai-stargate-datacenter-details
 
 ---
 
-# Environmental Impact
+# Environmental Impact <i class="fa-solid fa-leaf"></i>
 
 https://sustainabilitydialogue.uchicago.edu/news/data-centers-pollution-and-the-communities-left-behind/
 
@@ -212,13 +216,14 @@ https://www.mississippifreepress.org/amazons-canton-data-center-promises-prosper
 https://www.theguardian.com/us-news/2026/feb/07/california-monterey-park-stop-datacenter-construction
 
 https://www.theguardian.com/us-news/2025/dec/18/michigan-data-center-fight
+
 ---
 
 ## Water Shortage <i class="fa-solid fa-droplet"></i>
 
 ---
 
-## Energy sources and emissions
+## Energy sources and emissions <i class="fa-solid fa-smog"></i>
 
 ---
 
