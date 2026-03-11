@@ -75,6 +75,7 @@ The datacenters that are responsible for running and training the worlds most ad
 | Canton Facility | Mississipi | Amazon | - |
 | Monterey Park Data Center | California | California | - |
 | Stargate Project | Saline Township, Michigan | OpenAI, Oracle | - |
+| Colossus | 
 
 ---
 
@@ -113,6 +114,12 @@ Blackridge Research <sup>[3][ref3]</sup>
 </div>
 
 [ref3]: https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa "Blackridge Research - K.Vaishnavi Srivalli"
+
+---
+
+## Monterey Park Datacenter
+
+![bg left:60%](media/monterey_park_datacenter_project_site.png)
 
 ---
 
@@ -170,9 +177,13 @@ Elon Musk's xAI data center Methane gas turbines.
 
 ---
 
-# Networking <i class="fa-solid fa-network-wired"></i>
+# Network <i class="fa-solid fa-network-wired"></i>
 
 Network topology optimization
+
+---
+
+How are the cables routed 
 
 ---
 
@@ -262,3 +273,5 @@ https://www.theguardian.com/us-news/2025/dec/18/michigan-data-center-fight
 <sup>2</sup> [Datacenters Behaving Like Acoustic Weapons](https://youtu.be/_bP80DEAbuo) — YouTube, 2023.
 
 </div>
+
+https://www.theguardian.com/technology/2026/jan/15/elon-musk-xai-datacenter-memphis
