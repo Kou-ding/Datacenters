@@ -48,7 +48,7 @@ h2 {
 }
 h3 {
     color: var(--rose);
-    font-size: 30pt;
+    font-size: 25pt;
 }
 h4 {
     color: var(--rose);
@@ -180,4 +180,8 @@ caption {
     color: var(--subtle);
     padding: 8px;
     font-style: italic;
+}
+
+footer {
+    font-size: 10pt;
 }
