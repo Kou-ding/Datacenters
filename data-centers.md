@@ -4,6 +4,7 @@ size: 16:9
 paginate: true
 theme: rose-pine
 footer: Post AI Era Datacenters Deepdive
+math: mathjax
 style: |
     .fa-twitter { color: aqua; }
     .fa-mastodon { color: purple; }
@@ -197,7 +198,7 @@ End goal being 10GW of combined capacity.
 
 ## Colossus
 
-![bg h:800 left:70%](media/xAI-Colossus-ai-upscale.jpeg)
+![bg h:800 left:69%](media/xAI-Colossus-ai-upscale.jpeg)
 
 ---
 
@@ -214,6 +215,16 @@ End goal being 10GW of combined capacity.
 | Company    | xAI |
 | IT Capacity |  |
 
+</div>
+<div>
+
+<!-- Column 2 -->
+~110,000 NVIDIA GB200 NVL72 GPUs (targeting 1.1 PFlops FP8 compute).
+usually small fp numbers needed for 
+
+</div>
+</div>
+
 ---
 
 # Energy Requirements <i class="fa-solid fa-bolt"></i>
@@ -222,14 +233,28 @@ Ways to fullfil the insatiable hunger of datacenters for electricity.
 
 ---
 
-## Energy source candidates 
+## Local Energy source candidates 
 
-City main line isn't enough.
+City main line <u>isn't enough</u>. This necessitates the use of backup turbines power by:
+- **Diesel**
+- **Field gas**: Gas extracted from a production well before it enters a natural gas processing plant <sup>[31][31]</sup>.
+- **CNG**: <mark>Compressed Natural Gas</mark>, mainly methane compressed at a pressure of 200 to 248 bars <sup>[32][32]</sup>.
+- **LPG**: <mark>Liquefied Petroleum Gas</mark>, a mixture of propane and butane liquefied at 15 °C and a pressure of 1.7-7.5 bars <sup>[32][32]</sup>.
+- **LowBTU gases**: Natural gas, which at the wellhead has a gross heating value $\le 450$ BTU. Part of petroleum refining and crude oil, natural gas production.
 
-Use of backup turbines
-- Diesel
-- Gas 
-- Methane
+---
+
+## Fuel Comparison <i class="fa-solid fa-square-poll-horizontal"></i>
+
+| Comparison | CNG | LPG |
+| ---------- | --- | --- |
+| Constituents | Methane | Propane, Butane|
+| Energy density | Lower caloric value | Higher caloric value |
+| Cost | Cheaper | More expensive |
+| Emissions| Less than LPG | Less than gasoline |
+| Safety | Disperses quickly | Settles to ground, but highly inflammable |
+
+CNG risk of ignition is low so even though LPG is highly inflammable it is the more likely of the two to ignite.
 
 ---
 
@@ -245,50 +270,131 @@ Monterey Park Data Center , Canton Mississippi
 <div class="columns">
 <div>
 
-- Output
-- 
+Colossus specifications
+- natural gas turbines for primary generation
+- batteries for stability
+- grid for long-term scalability
+
+Elon Musk's xAI data center Methane gas turbines, Colossus. <sup>[24][24]</sup>
 
 </div>
 <div>
 
-Elon Musk's xAI data center Methane gas turbines, Colossus. <sup>[24][24]</sup>
-7 Titan-350 <sup>[22][22]</sup>
-12 SMT-130 <sup>[23][23]</sup>
-
-XAI Colossus 2’s is targeting ~1 Gigawatt as soon as possible. They have natural gas turbines for primary generation, batteries for stability, and grid for long-term scalability.
-
-XAI Colossus 2 has power from seven installed SMT-360/Titan-350 Natural Gas Turbines. The seven turbines in question are deployed at the Southaven, Mississippi site 6 miles from Colossus 2’s core Memphis facility and were acquired in late July/early August 2025. SemiAnalysis and Patel report the Titan-350 models from Solar Turbines (a Caterpillar subsidiary) were chosen for their mobile, high-efficiency design (up to 40% thermal efficiency) and rapid deployment (weeks vs. months for grid upgrades). Each Titan-350 can generate 35-38 Megawatts of power.
-
-This power Colossus 2 via medium-voltage (MV) interconnect lines, providing primary baseload power for ~110,000 NVIDIA GB200 NVL72 GPUs (targeting 1.1 PFlops FP8 compute).
-
-xAI’s joint venture (JV) with Solaris Energy Infrastructure (50.1% Solaris, 49.9% xAI) has already deployed $112 million in Q2 2025 CapEx for turbines, with Q4 2025-Q1 2026 ramping to enable over 1.1 GW total by Q2 2027 (and options for 1.5+ GW). This is fueled by temporary permitting loopholes (e.g., 12-month approvals without full environmental review) and land acquisitions like the former Duke Energy plant in Southaven.
-
-The mobile turbines can reach 1.1 gigawatts with about 30+ Titan-350 turbines.
-
-Grid Power (Substation) for 300 MW in 45-90 days
-
-There is current minimal power (~0.5 MW initial from Memphis Light, Gas & Water/MLGW), as turbines handle 90%+ load. No full tie-in yet due to TVA delays.
-
-A second dedicated substation (150-300 MW) is under construction and is directly funded by xAI ($50M+ upfront).
-
-They target getting it online by October 2025, relegating turbines to peaker/backup.
-
-The status is the foundations are complete and energization is imminent (60-90 days from September permits). Patel notes xAI’s direct funding (paying TVA $50M+) model accelerates this 2-3x faster than hyperscalers like Meta.
-
-Dylan Patel, SemiAnalysis warns of over $10 Billion of capital spending is needed total CapEx.
-
-Tesla Megapacks will provide power backup and resilience for outages, demand-response, and turbine ramping. they can provide 4 hours of power. They are planing to deploy 200 megapack for about 1 gigawatt hour of buffering.
-
-There is ~150-200 MWh of megapacks deployed at Colossus 2. They will have more batteries than Colossus 1’s 156 units/ ~600 MWh and connecting via MV (medium voltage) lines to Southaven.
-
-Tesla megapack revenue for Colossus 1 and Colossus 2 could combine to hit $500 million.
-
-Musk envisions solar and battery at 100 GW-1 TW scale but near-term it is Megapacks and gas turbines as a bridge. 
-
 ![w:600](media/gas-turbines-grok.jpg)
 
+- 7 Solar Turbines Titan-350 <sup>[22][22]</sup>
+- 12 Solar Turbines SMT-130 <sup>[23][23]</sup>
+
+Solar Turbines: a Caterpillar subsidiary
+
 </div>
 </div>
+
+---
+
+## Solar Turbines Titan 350
+
+<div class="columns">
+<!-- Column 1 -->
+<div>
+
+|Specifications|Value|
+|-|-|
+|Power output|35-39MW|
+|Thermal efficiency|~40%|
+|Fuel types| Natural gas, Propane, Low BTU gases |
+
+
+source<sup>[22][22],</sup> <sup>[24][24],</sup> <sup>[27][27]</sup> 
+
+</div>
+<div>
+
+
+![w:600](media/titan350specsheet.png)
+
+</div>
+</div>
+
+---
+
+## Solar Turbines Titan 350
+
+|Advanced Specifications|Value|
+|-|-|
+|Heat Rate| 8845 kJ/kW-hr - 8780 kJ/kW-hr |
+|Exhaust Flow| 371980 kg/hr - 387820 kg/hr|
+|Exhaust Temp| 460°C - 490°C|
+|Emissions | 25 PPM NOx |
+
+
+---
+
+## Solar Turbines SMT 130
+
+<div class="columns">
+<!-- Column 1 -->
+<div>
+
+|Specification|Value|
+|-|-|
+|Power output|16MW|
+|Thermal eff.|~36%|
+|Fuel types| Field Gas, CNG, LPG |
+|Heat Rate| 10160 kJ/kWe-hr |
+|Exhaust Flow|202510 kg/hr|
+|Exhaust T| 490°C|
+|Emissions | 25 PPM NOx |
+
+</div>
+<div>
+
+![w:1000](media/smt130specsheet.png)
+
+Fully-Integrated Mobile Power Plant *Powered by Titan 130* <sup>[23][23],</sup> <sup>[24][24],</sup> <sup>[28][28]</sup>
+<mark> <i class="fa-solid fa-plus"></i>Added Diesel fuel support</mark>
+
+</div>
+</div>
+
+---
+
+## SoloNOx
+
+SoloNOx is the technology enabling Solar Turbines to reduce NOx and CO emissions.<sup>[30][30]</sup>
+
+Offers a robust:
+- 9ppm NOx, 
+- 15ppm CO, and 
+- 15 ppm UHC 
+
+emissions warranty for natural gas fuel.
+
+---
+
+## Available power
+
+SMT 130 supports Diesel fuel boosting for added flexibility.
+
+Titan 130 available power graph
+
+![bg w:500 right:40%](media/titan130-available-power.png)
+
+Colossus power generation around 1.1 GW by Q2 2027
+
+---
+
+## Tesla Megapacks 
+
+Megapacks are large scale energy storage. <mark>*Many many* Batteries</mark>
+
+Used for:
+- Power Backup 
+- Resilience for outages
+- Demand-response
+- Turbine ramping
+
+They can provide 4 hours of power. They are planing to deploy 200 megapack for about 1 gigawatt hour of buffering. Long term solar powered facility but near-term it is Megapacks and gas turbines that is being used as a bridge to the future.
 
 ---
 
@@ -349,7 +455,8 @@ Residents reported:
 <!-- Column 1 -->
 <div>
 
-- Sound below <sup>[1][1]</sup>
+- Sound waves who's frequency is below the lower limit of human hearing (around 20Hz)  <sup>[1][1]</sup>
+- 
 
 </div>
 <!-- Column 2 -->
@@ -374,11 +481,10 @@ Residents reported:
 
 ## Methane gas
 
-- Methane gas turbines pump harmful nitrogen oxides into the air, which are known to cause:
-    - cancer, 
-    - asthma and 
-    - other upper respiratory diseases.<sup>[4][4]</sup>
-
+- Methane gas turbines pump harmful nitrogen oxides (mainly $NO_2$) into the air, which are known to cause:
+    - Cancer
+    - Asthma
+    - Respiratory diseases <sup>[4][4],</sup> <sup>[26][26]</sup>
 
 ---
 
@@ -393,7 +499,7 @@ Residents reported:
 
 ---
 
-# Sociopolitical $\quad$ Aspect <i class="fa-solid fa-scale-balanced"></i>
+# Sociopolitical $\quad$ Aspects <i class="fa-solid fa-scale-balanced"></i>
 
 ---
 
@@ -468,8 +574,22 @@ Residents reported:
 
 [22]: https://s7d2.scene7.com/is/content/Caterpillar/CM20220318-18bf4-966d4 "Titan 350, Gas Turbine Compressor Set - Solar Turbines"
 
-[23]: https://s7d2.scene7.com/is/content/Caterpillar/CM20201215-9943b-379e0 "SMT130, SOLAR MOBILE TURBOMACHINERY, Solar Turbines"
+[23]: https://s7d2.scene7.com/is/content/Caterpillar/CM20201215-9943b-379e0 "SMT130, SOLAR MOBILE TURBOMACHINERY - Solar Turbines"
 
 [24]: https://www.nextbigfuture.com/2025/09/xai-colossus-2-first-gigawatt-ai-data-center.html "XAI Colossus 2 First Gigawatt AI Data Center - nextBIGFUTURE"
 
 [25]: https://www.sgvtribune.com/2025/12/04/monterey-park-pauses-vote-on-massive-proposed-data-center-as-questions-linger-over-impact/ "Monterey Park pauses vote on massive proposed data center, as questions linger over impact - San Gabriel Valley Tribune"
+
+[26]: http://dx.doi.org/10.20431/2456-0596.0204008 "Public Health Issues from the Exposure to Nitrogen Oxides: A Brief Review - ARC Journal of Public Health and Community Medicine"
+
+[27]: https://www.solarturbines.com/en_US/products/power-generation-packages/titan-350-38mw.html#tabs-f0c2557302-item-180d94bbbb-tab "Titan 350, 38 MW - Solar Turbines"
+
+[28]: https://s7d2.scene7.com/is/content/Caterpillar/CM20150703-52095-43744 "Titan 130 Specsheet - Solar Turbines"
+
+[29]: https://www.tesla.com/megapack "Tesla Megapack - Tesla"
+
+[30]: https://www.solarturbines.com/en_US/services/equipment-optimization/system-upgrades/safety-and-sustainability/solonox-upgrades.html "SoLoNOx Upgrade - Solar Turbines"
+
+[31]: https://www.law.cornell.edu/definitions/index.php?width=840&height=800&iframe=true&def_id=3b13a2b19ee30cdd89249f2ddd2f5b65&term_occur=999&term_src=Title:40:Chapter:I:Subchapter:C:Part:68:Subpart:A:68.3 "Field gas definition - Law cornell"
+
+[32]: https://www.diffen.com/difference/CNG_vs_LPG "CNG vs LPG - Diffen"

@@ -83,6 +83,10 @@ li {
 img {
     background-color: var(--highlight-low);
 }
+mark {
+    color: var(--text);
+    background-color: var(--highlight-high);
+}
 strong {
     color: var(--text);
     font-weight: inherit;
