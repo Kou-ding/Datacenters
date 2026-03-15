@@ -327,7 +327,6 @@ source<sup>[22][22],</sup> <sup>[24][24],</sup> <sup>[27][27]</sup>
 |Exhaust Temp| 460°C - 490°C|
 |Emissions | 25 PPM NOx |
 
-
 ---
 
 ## Solar Turbines SMT 130
@@ -414,11 +413,46 @@ How are the cables routed
 
 # Environmental Impact <i class="fa-solid fa-leaf"></i>
 
-- diesel generators spike local NOx levels
-
 ---
 
 ## Water Shortage <i class="fa-solid fa-droplet"></i>
+
+<div class="columns">
+<!-- Column 1 -->
+<div>
+
+Servers are usually water cooled.
+
+</div>
+<div>
+
+![](media/lenovo-server.jpg)
+
+</div>
+</div>
+
+---
+
+### Watercooled server
+
+- Copper piping
+- ✅ Great thermal conductivity
+    - Pure copper: 401W/m²K 
+    - Pure aluminum: 205W/m²K
+
+- ❌ More expensive <sup>[33][33]</sup>
+
+![bg left:50% w:600](media/water-cooled-server-example.png)
+
+---
+
+### Galvanic Corrosion
+
+Galvanic is an electrochemical process that occurs when two metals with different electrochemical activity are in contact with each other (like copper and aluminum). 
+
+The more noble, passive metal (copper or nickel) drives the corrosion of the active, less noble metal (aluminum), where the passive metal remains fairly unharmed. <sup>[33][33]</sup>
+
+![bg left:50% h:500](media/Galvanic_Series_Chart.jpg)
 
 ---
 
@@ -431,6 +465,8 @@ loophole allowing the operation of generators without permits so long as the mac
 xAI eventually received permits for 15 turbines at Colossus 1 and is now operating 12 permitted machines at the site.
 
 - Net annual nitrogen oxide emission reductions of up to 296 tons by 2032,” <sup>[4][4]</sup>
+
+- diesel generators spike local NOx levels
 
 ---
 
@@ -593,3 +629,5 @@ Residents reported:
 [31]: https://www.law.cornell.edu/definitions/index.php?width=840&height=800&iframe=true&def_id=3b13a2b19ee30cdd89249f2ddd2f5b65&term_occur=999&term_src=Title:40:Chapter:I:Subchapter:C:Part:68:Subpart:A:68.3 "Field gas definition - Law cornell"
 
 [32]: https://www.diffen.com/difference/CNG_vs_LPG "CNG vs LPG - Diffen"
+
+[33]: https://www.ekwb.com/blog/aluminium-vs-copper/ "Copper vs Aluminum - LMTEK"
