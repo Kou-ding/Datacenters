@@ -29,8 +29,8 @@ AEM: 10371
 
 ## Contents <i class="fa-solid fa-list"></i>
 
-1. [Status quo](#status-quo)
-2. [Datacenters Pillars](#new-datacenters)
+1. [AI Boom](#ai-boom)
+2. [Datacenter Case Studies](#datacenter-case-studies)
 3. [Energy Requirements](#energy-requirements)
 4. [Network topology](#network--topology)
 5. [Environmental Impact](#environmental-impact)
@@ -42,7 +42,7 @@ AEM: 10371
 
 ---
 
-# Status Quo <i class="fa-solid fa-bomb"></i>
+# AI Boom <i class="fa-solid fa-bomb"></i>
 
 What's the driving force of datacenter construction and expansions?
 
@@ -55,15 +55,14 @@ What's the driving force of datacenter construction and expansions?
 - Focus on new facilities and expansions post AI era
 - Push towards AGI
 - Technology replacing humans in most fields
-- note-to-self: why does the AI crisis seem to be different than technology not creating that many new jobs?
 
 ![bg w:350 right:35%](media/AI-stock-img.png)
 
 ---
 
-# New Datacenters <i class="fa-solid fa-server"></i>
+# Datacenter Case Studies <i class="fa-solid fa-server"></i>
 
-The datacenters that are responsible for running and training the worlds most advanced LLMs.
+The datacenters that are responsible for running the world's cloud services and facilitating the training of the most advanced LLMs
 
 ---
 
@@ -87,19 +86,39 @@ Most Activity
 
 | Datacenter | Location | Company | LLM |
 | ---------- | -------- | ------- | --- |
-| Canton Facility | Mississipi | Amazon | - |
-| Monterey Park Data Center | California | California | - |
-| Stargate Project | Saline Township, Michigan | OpenAI, Oracle | - |
-| Colossus | Memphis | xAI | |
+| Stargate Project |  Michigan | OpenAI, Oracle | ChatGPT |
+| Colossus | Memphis | xAI | Grok |
+| Hyperion | Louisiana | Meta | Llama |
+| Google Datacenter| Iowa | Google | Gemini |
+| Fire-Flyer AI Cluster | Zhejiang | Fire-Flyer | Deepseek |
+
+![bg w:390 right:22%](media/datacenter.webp)
 
 ---
 
+## Goals
 
-## <center> Stargate </center> 
+- ~2 GW by 2030 and end goal 5GW. While Meta has agreements for 1.8 GW of solar and wind, 150 MW geothermal, and even nuclear power extensions, most current power is set to come from gas <sup>[45][45]</sup>
 
+Distributed generation
+- Many lower scale power generators that are connected to the network. 
+ 
+---
 
-![bg left:65%](media/stargate.jpg)
+## Helpful facilities for exploring the phenomenon
 
+| Datacenter | Location | Company |
+| ---------- | -------- | ------- |
+| Canton Facility | Mississipi | Amazon |
+| Monterey Park Data Center | California | California |
+
+![bg w:390 right:31%](media/datacenter-2.webp)
+
+---
+
+## Stargate 
+
+![bg left:69%](media/stargate.jpg)
 
 ---
 
@@ -140,6 +159,37 @@ End goal being 10GW of combined capacity.
 ## Chips
 
 - Nvidia GB200 racks
+
+---
+
+## Colossus
+
+![bg h:800 left:69%](media/xAI-Colossus-ai-upscale.jpeg)
+
+---
+
+## Specifications <i class="fa-solid fa-file-pen"></i>
+
+<div class="columns">
+<!-- Column 1 -->
+<div>
+
+| Specs      | Value          |
+|------------|----------------|
+| Investment |   |
+| Location   |  |
+| Company    | xAI |
+| IT Capacity |  |
+
+</div>
+<div>
+
+<!-- Column 2 -->
+~110,000 NVIDIA GB200 NVL72 GPUs (targeting 1.1 PFlops FP8 compute).
+usually small fp numbers needed for 
+
+</div>
+</div>
 
 ---
 
@@ -196,44 +246,13 @@ End goal being 10GW of combined capacity.
 
 ---
 
-## Colossus
-
-![bg h:800 left:69%](media/xAI-Colossus-ai-upscale.jpeg)
-
----
-
-## Specifications <i class="fa-solid fa-file-pen"></i>
-
-<div class="columns">
-<!-- Column 1 -->
-<div>
-
-| Specs      | Value          |
-|------------|----------------|
-| Investment |   |
-| Location   |  |
-| Company    | xAI |
-| IT Capacity |  |
-
-</div>
-<div>
-
-<!-- Column 2 -->
-~110,000 NVIDIA GB200 NVL72 GPUs (targeting 1.1 PFlops FP8 compute).
-usually small fp numbers needed for 
-
-</div>
-</div>
-
----
-
 # Energy Requirements <i class="fa-solid fa-bolt"></i>
 
-Ways to fullfil the insatiable hunger of datacenters for electricity.
+Ways to fullfil the insatiable hunger of datacenters for electricity
 
 ---
 
-## Local Energy source candidates 
+## Local Energy source candidates <i class="fa-solid fa-oil-well"></i>
 
 City main line <u>isn't enough</u>. This necessitates the use of backup turbines power by:
 - **Diesel**
@@ -265,12 +284,12 @@ Monterey Park Data Center , Canton Mississippi
 
 ---
 
-## Methane Gas Turbines <i class="fa-solid fa-gas-pump"></i>
+## Methane Gas Turbines <i class="fa-solid fa-gas-pump"></i> 
 
 <div class="columns">
 <div>
 
-Colossus specifications
+<mark>Colossus case study</mark> Specifications:
 - natural gas turbines for primary generation
 - batteries for stability
 - grid for long-term scalability
@@ -379,13 +398,13 @@ Titan 130 available power graph
 
 ![bg w:500 right:40%](media/titan130-available-power.png)
 
-Colossus power generation around 1.1 GW by Q2 2027
+Colossus power generation around 1.1 GW by Q2 2027 and 2 GW total capacity
 
 ---
 
 ## Tesla Megapacks 
 
-Megapacks are large scale energy storage. <mark>*Many many* Batteries</mark>
+Megapacks <sup>[29][29]</sup> are large scale energy storage. <mark>*Many many* Batteries</mark>
 
 Used for:
 - Power Backup 
@@ -398,6 +417,9 @@ They can provide 4 hours of power. They are planing to deploy 200 megapack for a
 ---
 
 ## Sustainable Pledges <i class="fa-solid fa-solar-panel"></i>
+
+xAI plans an 88-acre solar array to provide power to Colossus <sup>[44][44]</sup>
+
 
 ---
 
@@ -413,6 +435,8 @@ How are the cables routed
 
 # Environmental Impact <i class="fa-solid fa-leaf"></i>
 
+The disruption observed to the nature's equilibrium
+
 ---
 
 ## Water Shortage <i class="fa-solid fa-droplet"></i>
@@ -422,6 +446,13 @@ How are the cables routed
 <div>
 
 Servers are usually water cooled.
+Most of the water turns into steam and is released into the atmosphere
+
+Alternatively it is
+
+Water is chosen because it is more thermally conductive than air
+- Air: 0.026 \[W/mK\]
+- Water: 0.6089 \[W/mK\] <sup>[37][37]</sup>
 
 </div>
 <div>
@@ -433,26 +464,73 @@ Servers are usually water cooled.
 
 ---
 
-### Watercooled server
+## Thermal conductivity <i class="fa-solid fa-temperature-high"></i>
+
+The thermal conductivity of a material is a measure of its ability to conduct heat. It quantifies the proportionality between the heat flux $q$ and the temperature gradient $\nabla T$ in the direction of heat transport.
+
+$$ q = -k \nabla T \ [W/mK]$$
+
+- $q \ [W/m^2]$: heat flow rate per unit area
+- $\nabla T \ [K/m]$: temperature gradient in the direction of heat transport
+
+![bg w:220 right:20%](media/fireball.png)
+
+---
+
+### Watercooled server <i class="fa-solid fa-fan"></i> <i class="fa-solid fa-droplet"></i>
 
 - Copper piping
-- ✅ Great thermal conductivity
-    - Pure copper: 401W/m²K 
-    - Pure aluminum: 205W/m²K
+- ✅ Great thermal conductivity<sup>[33][33]</sup>
+    - Copper: $401 \ [W/mK]$
+    - Aluminum: $205 \ [W/mK]$
 
-- ❌ More expensive <sup>[33][33]</sup>
+- ❌ More expensive per tonne<sup>[34][34]</sup>
+    - Copper: $12808\$/t$
+    - Aluminum: $3385\$/t$
 
 ![bg left:50% w:600](media/water-cooled-server-example.png)
 
 ---
 
-### Galvanic Corrosion
+### Galvanic Corrosion <i class="fa-solid fa-triangle-exclamation"></i>
 
 Galvanic is an electrochemical process that occurs when two metals with different electrochemical activity are in contact with each other (like copper and aluminum). 
 
 The more noble, passive metal (copper or nickel) drives the corrosion of the active, less noble metal (aluminum), where the passive metal remains fairly unharmed. <sup>[33][33]</sup>
 
 ![bg left:50% h:500](media/Galvanic_Series_Chart.jpg)
+
+---
+
+## Cooling types <sup>[38][38]</sup>
+
+1. Computer Room Air Conditioning
+2. Evaporative Cooling
+3. Direct-To-Chip Cooling
+4. Single-Phase Immersion Cooling
+5. Multi-Phase Immersion Cooling
+
+![bg w:400 right:45%](media/cooling_methods_compared.png)
+
+---
+
+## Computer Room Air Conditioning
+
+---
+
+## Evaporative Cooling
+
+---
+
+## Direct-To-Chip Cooling
+
+---
+
+## Single-Phase Immersion Cooling
+
+---
+
+## Multi-Phase Immersion Cooling
 
 ---
 
@@ -472,14 +550,19 @@ xAI eventually received permits for 15 turbines at Colossus 1 and is now operati
 
 # Health Effects <i class="fa-solid fa-heart-pulse"></i>
 
+The risks datacenters pose to the public's well being
+
 ---
 
 ## Canton
 
 Residents reported:
-- lung irritation, 
-- breathing difficulties, and 
-- construction dust that settled over homes and playgrounds. 
+- Lung irritation 
+- Breathing difficulties
+- Construction dust that settled over the area
+- Elevated childhood asthma rates <sup>[6][6]</sup>
+
+
 - Cooling towers pull millions of gallons of water daily from the already-stressed Big Black River system, 
 - while weekly tests of backup diesel generators spike local NOx levels and worsen the area’s elevated childhood asthma rates. <sup>[6][6]</sup>
 
@@ -491,8 +574,12 @@ Residents reported:
 <!-- Column 1 -->
 <div>
 
-- Sound waves who's frequency is below the lower limit of human hearing (around 20Hz)  <sup>[1][1]</sup>
-- 
+
+Infrasound is low frequency sound  below the lower limit of human hearing (around 20Hz)  <sup>[1][1]</sup>
+
+![](media/infrasound_freq_spectrum.png)
+
+🟨: loud, Y-axis: frequencies, X-axis: time
 
 </div>
 <!-- Column 2 -->
@@ -508,60 +595,123 @@ Residents reported:
 - Anxiety, Depression <sup>[19][19]</sup>
 
 </div>
+</div>
 
 ---
 
 ## Sustained audible noise pollution <i class="fa-solid fa-ear-listen"></i>
 
+Constant sound exposure is associated with:
+- Annoyance
+- Disrupted sleep cycles
+- Cardiovascular disorders
+- Impaired cognitive development of children
+- Worsened psychological and physical well-being <sup>[35][35]</sup>
+- Seizures (audiogenic epilepsy) <sup>[36][36]</sup>
+
+
+![bg w:350 right:30%](media/noise-pollution.webp)
+
 ---
 
-## Methane gas
+## NOx - Nitrogen Oxides
 
-- Methane gas turbines pump harmful nitrogen oxides (mainly $NO_2$) into the air, which are known to cause:
-    - Cancer
-    - Asthma
-    - Respiratory diseases <sup>[4][4],</sup> <sup>[26][26]</sup>
+Methane gas turbines pump harmful nitrogen oxides (mainly $NO_2$) into the air, which are known to cause:
+
+- Cancer
+- Asthma
+- Respiratory diseases <sup>[4][4],</sup> <sup>[26][26]</sup>
+
+Children are especially susceptible to respiratory conditions. 
+
+![bg w:350 right:30%](media/NO2.png)
 
 ---
 
 # Finance <i class="fa-solid fa-money-bill"></i>
 
+The economic side of the story
+
 ---
 
-- Monopolizing goods for consumers leading to cost skyrocketting
-    - Ram & Hard disk prices
-- shift towards subscription based models and away from owning based logic
+## Maximized Demand <i class="fa-solid fa-hand-holding-hand"></i>
 
+In the process of building these Datacenters, companies are:
+
+- Placing open-ended orders for memory effectively <i class="fa-solid fa-right-long"></i>
+- Telling manufacturers they will buy as much as can be delivered, regardless of the price
+
+Manufacturers are in return:
+
+- Pivoting their factories away from making standard consumer memory to <i class="fa-solid fa-right-long"></i>
+- Prioritize high-profit enterprise chips ( This affects both **RAM** and **Hard Disks**)
+
+The AI build-out is colliding with a supply chain that cannot meet its physical requirements. <sup>[46][46],</sup> <sup>[47][47]</sup>
 
 ---
 
 # Sociopolitical $\quad$ Aspects <i class="fa-solid fa-scale-balanced"></i>
 
+The effects that reverberate throughout the 
+
 ---
 
 ## Job Creation <i class="fa-solid fa-briefcase"></i>
 
-- Stargate
+Stargate
+
 - **100,000–200,000** construction and operations jobs <sup>[9][9]</sup>
 - **~25,000** onsite jobs <sup>[11][11]</sup>
-- But large automated data centers often need *only dozens* of permanent staff once built. 
-- Abilene’s first facility may only employ **~57** ongoing workers, despite promises of thousands <sup>[12][12]</sup>
+- Large automated data centers often need *only dozens* of permanent staff once built
+- May only employ **~57** ongoing workers, despite promises of thousands <sup>[12][12]</sup>
+
+![bg w:350 right:30%](media/find-a-job.png)
 
 ---
 
-## Strategic Placement <i class="fa-solid fa-republican"></i>
+## Post AI World jobs
 
-- On democrat states
-- Low backlash from the community
--   
+Many companies announce layoffs to cut costs
+tends to show that AI is a revolution like no other, one that doesnt fill the empty spots it created 
+
+It isn't yet clear if AI will create more jobs than it replaced. The paper with the predictions<sup>[48][48]</sup>
+
+![bg w:350 right:30%](media/job-seeking.png)
 
 ---
 
-## Worries about ownership
+## Strategic Datacenter Placement <i class="fa-solid fa-republican"></i>
 
-- Shift towards cloud computing
-- Subscription based models
+<div class="columns">
+<!-- Column 1 -->
+<div>
+
+- Republican states often tend to be less educated
 - 
+- Low backlash from <i class="fa-solid fa-republican"></i> communities near sites
+-  
+
+</div>
+<div>
+
+![w:600](media/education-gap.jpg)
+
+</div>
+</div>
+
+---
+
+## Ownership
+
+Shift towards cloud computing
+
+- Less burden on the user's device <i class="fa-solid fa-laptop"></i>
+- Can sell less powerful devices, useless without cloud computing assistance <sup>[40][40]</sup>
+- Cloud storage, cloud gaming <sup>[43][43]</sup>, cloud movies <sup>[41][41]</sup>, cloud music <sup>[42][42]</sup>, cloud AI, cloud everything <i class="fa-solid fa-cloud"></i>
+
+Cloud services instigate subscription based models which degrade ownership.
+
+![bg w:500 right:40%](media/own-nothing.webp)
 
 
 <!-- ################# Sources ################# -->
@@ -631,3 +781,33 @@ Residents reported:
 [32]: https://www.diffen.com/difference/CNG_vs_LPG "CNG vs LPG - Diffen"
 
 [33]: https://www.ekwb.com/blog/aluminium-vs-copper/ "Copper vs Aluminum - LMTEK"
+
+[34]: https://www.alcircle.com/news/assessing-if-aluminium-is-ready-to-take-up-coppers-share-of-demand-in-renewables-evs-and-data-centres-117556 "Assessing if aluminium is ready to take up copper’s share of demand in renewables, EVs and data centres - Alcircle"
+
+[35]: https://doi.org/10.1080/00139157.2022.2046456 "Here, There, and Everywhere: How the SDGs Must Include Noise Pollution in Their Development Challenges - Tandfonline"
+
+[36]: https://www.droracle.ai/articles/125906/can-excessive-sound-exposure-trigger-seizures "Can excessive sound exposure trigger seizures?"
+
+[37]: https://en.wikipedia.org/wiki/Thermal_conductivity_and_resistivity "Thermal conductivity and resistivity - Wikipedia"
+
+[38]: https://www.datacenterknowledge.com/cooling/data-center-cooling-methods-costs-vs-efficiency-vs-sustainability "Data Center Cooling Methods: Costs vs. Efficiency vs. Sustainability - Datacenter Knowledge, Christopher Tozzi"
+
+[39]: https://www.csmonitor.com/USA/Politics/2020/1027/As-college-grads-flee-the-GOP-political-diploma-divide-grows "As college grads flee the GOP, political ‘diploma divide’ grows - The Christian Science Monitor" 
+
+[40]: https://www.microsoft.com/en-us/windows-365/link "Windows 365 Link - Microsoft"
+
+[41]: https://www.netflix.com/ "Netflix"
+
+[42]: https://open.spotify.com/ "Spotify"
+
+[43]: https://www.xbox.com/en-us/play "XBox Cloud Gaming"
+
+[44]: https://www.datacenterdynamics.com/en/news/xai-submits-application-for-88-acre-solar-array-at-colossus-supercomputer-in-memphis-tennessee/ "xAI submits application for 88-acre solar array at Colossus supercomputer in Memphis, Tennessee - Datacenter Dynamics"
+
+[45]: https://www.datacenterfrontier.com/hyperscale/article/55310441/ownership-and-power-challenges-in-metas-hyperion-and-prometheus-data-centers "Meta’s Dual-Track Data Center Strategy: Owning AI Campuses, Leasing Cloud, and Expanding Nationwide - Data center Frontier"
+
+[46]: https://www.reuters.com/world/china/ai-frenzy-is-driving-new-global-supply-chain-crisis-2025-12-03/ "The AI frenzy is driving a memory chip supply crisis - Reuters"
+
+[47]: https://www.consumerreports.org/electronics-computers/laptops-chromebooks/ai-data-centers-buying-up-ram-and-raising-laptop-prices-a3637558313/ "With AI Data Centers Scooping up RAM, Laptop Prices Could Spike in 2026 - Consumer Reports"
+
+[48]: https://eig.org/wp-content/uploads/2025/08/EIG-AI-and-Jobs.pdf "AI and Jobs: The Final Word (Until the Next One) - Economic Innovation Group"
