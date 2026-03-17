@@ -1,4 +1,146 @@
-# Title
+## Slide 1
+
+Καλησπέρα σας. Ονομάζομαι Παπαδάκης Κωνσταντίνος Φώτης και θα σας παρουσιάσω την πολύπλευρη ανάλυση μου πάνω στα Datacenters εστιάζοντας επί των πλείστων στην εποχή μετά την έκρηξη της τεχνητής νοημοσύνης.  
+
+## Slide 2
+
+Οι κύριες θεματικές ενότητες της παρουσίασης αποτελούν:
+
+1. Την
+2. 
+
+## Slide 6
+
+
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+## Slide 
+
+
+
 
 ## 
 

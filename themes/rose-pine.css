@@ -81,7 +81,8 @@ li {
     color: var(--subtle);
 }
 img {
-    background-color: var(--highlight-low);
+    /* Image background color */
+    /* background-color: var(--highlight-low); */
 }
 mark {
     color: var(--text);
