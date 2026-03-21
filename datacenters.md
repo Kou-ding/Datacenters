@@ -428,11 +428,19 @@ Improves on the previous method by replacing the liquid with a non-conductive li
 
 # Network $\quad$ topology <i class="fa-solid fa-network-wired"></i>
 
-Network topology optimization
+Optimizing performance through efficient cable routing
 
 ---
 
-How are the cables routed 
+## Definition
+
+In datacenter when using the term network topology we refer to the <mark>structure and layout of networking equipment</mark> and its relationship to servers.
+
+---
+
+## 
+
+
 
 ---
 
@@ -490,6 +498,10 @@ Leading to reduced availability for agriculture, drinking, and ecosystems.
 
 </div>
 </div>
+
+---
+
+chemical runoff from cooling systems contaminates soil and waterways.
 
 ---
 
@@ -604,10 +616,7 @@ Stargate
 
 ## Post AI World jobs
 
-Many companies announce layoffs to cut costs
-tends to show that AI is a revolution like no other, one that doesnt fill the empty spots it created 
-
-It isn't yet clear if AI will create more jobs than it replaced. The paper with the predictions<sup>[48][48]</sup>
+Many companies announce layoffs to cut costs tends to show that AI is a revolution like no other, one that doesn't create more jobs than it replaced. The paper with the predictions
 
 ![bg w:350 right:30%](media/job-seeking.png)
 
@@ -615,7 +624,7 @@ It isn't yet clear if AI will create more jobs than it replaced. The paper with 
 
 ## AI Occupational Exposure
 
-Tasks which are heavily reliant on the standardized <mark>processing of textual information</mark>, are things AI is likely to be good at.
+Tasks which are heavily reliant on the standardized <mark>processing of textual information</mark>, are things AI is likely to be good at. <sup>[48][48]</sup>
 
 Tasks, which rely on in-person <mark>physical dexterity</mark>, are naturally less exposed to AI. (recent advancements in robotics question this) 
 
@@ -623,44 +632,58 @@ Tasks, which rely on in-person <mark>physical dexterity</mark>, are naturally le
 
 ---
 
-## Unemployment
-
-![bg w:650 left:55%](media/Unemployment-AI-exposure.png)
-
-1. 
-2. 
-3. 
-4. 
-5. 
-
----
-
-
-## Strategic Datacenter Placement <i class="fa-solid fa-republican"></i>
+## Advancements in Robotics
 
 <div class="columns">
 <!-- Column 1 -->
 <div>
 
-- Datacenters placement
-- Republican states often tend to be less educated
-- 
-- Low backlash from <i class="fa-solid fa-republican"></i> communities near sites
--  
+\
+<video width="550" src="media/china-robots-spring-festival.mp4" controls></video>
 
 </div>
 <div>
 
-![w:600](media/education-gap.jpg)
+### <center> China CGTN 2026 </center>
+
+On China's Spring festival (Chinese New Year) we witnessed some impeccable AI augmented robot dexterity live on China Global Television Network.
+
+Growth is rapid and real life applications are imminent.
 
 </div>
 </div>
 
 ---
 
-## Backlash
+## Unemployment
 
-Monterey park protest
+![bg w:650 left:55%](media/Unemployment-AI-exposure.png)
+
+**5** equally sized groups based on their AIOE score, with quintile **1** being the <mark>least AI-exposed</mark> and quintile **5** being the <mark>most AI-exposed</mark>
+
+More unemployment for the least exposure workers. <sup>[48][48]</sup>
+
+---
+
+## Opposite point of view
+
+Compared to previous technological revolutions, experts say AI is chipping away at many white-collar jobs, including coding and marketing roles, and allowing companies to reduce hiring and improve productivity with fewer workers. <sup>[54][54]</sup>
+
+![bg w:400 right:30%](media/white-collar.png)
+
+---
+
+## J.P. Morgan study
+
+- Graduate students face a tougher job market
+
+- In affected professions experience is appreciated <sup>[55][55]</sup>
+
+![bg right:50% w:650](media/College_Grad_Graph.webp)
+
+---
+
+## Backlash
 
 <div class="columns">
 <!-- Column 1 -->
@@ -668,9 +691,13 @@ Monterey park protest
 
 ![w:500](media/monterey_park_protest.png)
 
+$\text{``Monterey park protest"}$
 </div>
 <div>
 
+Across the nation many revolts against datacenters are occuring.
+
+More than 50 active groups across 17 states targeted 30 projects during that time period, two-thirds of which were halted. <sup>[7][7]</sup>
 
 </div>
 </div>
@@ -751,8 +778,10 @@ Most Activity
 
 <!-- Column 2 -->
 Good example because:
-- AI usage
-- centralized to one datacenter
+- Purpose built for AI usage
+- Centralized LLM to one datacenter
+- Already built
+- Renowned for its scale
 
 </div>
 </div>
@@ -916,7 +945,9 @@ Net annual nitrogen oxide emission reductions of up to 296 tons by 2032,” <sup
 
 ---
 
-# Ambitious Projects
+# Future Projects <i class="fa-solid fa-meteor"></i>
+
+Datacenter construction projects promising to deliver the world to the new age of ai augmented computation.
 
 ---
 
@@ -927,6 +958,10 @@ Colossus power generation around 1.1 GW by Q2 2027 and 2 GW total capacity
 ---
 
 ## Hyperion
+
+![bg left:68%](media/hyperion-manhattan.webp)
+
+---
 
 - ~2 GW by 2030 and end goal 5GW. While Meta has agreements for 1.8 GW of solar and wind, 150 MW geothermal, and even nuclear power extensions, most current power is set to come from gas <sup>[45][45]</sup>
 
@@ -1085,3 +1120,11 @@ End goal being 10GW of combined capacity.
 [52]: https://www.researchgate.net/publication/288265906_Comparison_of_different_gas_turbine_inlet_air_cooling_methods "Comparison of Different Gas Turbine Inlet Air Cooling Methods - Research Gate"
 
 [53]: https://www.datacenterdynamics.com/en/news/greenpeace-chinas-data-centers-are-primarily-coal-powered-emit-99m-tonnes-co2/ "Greenpeace: China's data centers are primarily coal powered, emit 99m tonnes of CO2 - Datacenter Dynamics"
+
+[54]: https://www.cnbc.com/2026/03/13/software-ai-agents-college-graduate-unemployment.html "AI agents could easily send college grad unemployment over 30%, ServiceNow CEO says - CNBC"
+
+[55]: https://www.jpmorgan.com/insights/global-research/artificial-intelligence/ai-impact-job-growth "Is AI already impacting job growth? - JPMorgan"
+
+[56]: https://youtu.be/mUmlv814aJo "Martial arts robots dazzle at 2026 Spring Festival Gala - CGTN Youtube Channel"
+
+[57]: https://www.datacenterknowledge.com/networking/data-center-network-topology-a-guide-to-optimizing-performance "Data Center Network Topology: A Guide to Optimizing Performance - Datacenter Knowledge, Christopher Tozzi"
