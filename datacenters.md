@@ -25,12 +25,13 @@ style: |
 Papadakis Konstantinos Fotios
 AEM: 10371
 
+<!-- Καλησπέρα σας. Ονομάζομαι Παπαδάκης Κωνσταντίνος Φώτης και θα σας παρουσιάσω την πολύπλευρη ανάλυση μου πάνω στα Datacenters εστιάζοντας επί των πλείστων στην εποχή μετά την έκρηξη της τεχνητής νοημοσύνης.  -->
+
 ---
 
 ## Contents <i class="fa-solid fa-list"></i>
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 1. [AI Boom](#ai-boom)
@@ -48,10 +49,16 @@ AEM: 10371
 9. [Datacenter Case Study](#datacenter-case-study)
 10. [Ambitious Projects](#ambitious-projects)
 
+<center>
+
 ![w:300](media/stack-of-books.png)
+
+</center>
 
 </div>
 </div>
+
+<!-- Οι κύριες θεματικές ενότητες της παρουσίασης  -->
 
 ---
 
@@ -92,7 +99,6 @@ Ways to fullfil the insatiable hunger of datacenters for electricity
 City main line <u>isn't enough</u>. This necessitates the use of local energy generation to meet energy demands.
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 ### Renewable energy
@@ -126,8 +132,6 @@ City main line <u>isn't enough</u>. This necessitates the use of local energy ge
 
 Distributed Generation <i class="fa-solid fa-bars"></i> On-site Generation
 
-
-
 - Technologies being used can be considered D.E.R.(Distributed Energy Resources) 
 E.g. Solar, Wind, mini gas turbines etc. 
 
@@ -141,7 +145,6 @@ But!
 ## Scale close or exceeding centralized
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 ![w:400](media/Texas-power-stations.png)
@@ -193,14 +196,13 @@ CNG risk of ignition is low so even though LPG is highly inflammable it is the m
 
 # Cooling <i class="fa-solid fa-snowflake"></i>
 
-
+Bringing down the temperature to avoid thermal throttling
 
 ---
 
 ## Water <i class="fa-solid fa-droplet"></i> vs Air <i class="fa-solid fa-fan"></i>
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 Water is chosen because it is more thermally conductive than air
@@ -210,7 +212,6 @@ Water is chosen because it is more thermally conductive than air
 Thus the more energy efficient solution depend on a more and more direct heat dissipation from water or even special non-conductive liquids. 
 </div>
 <div>
-<!-- Column 2 -->
 
 ![](media/lenovo-server.jpg)
 
@@ -306,7 +307,6 @@ The origin of datacenter cooling. Rooms dedicated to housing IT equipped with tr
 Dissipates heat by converting liquid water into vapor, absorbing heat during the evaporation process.
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 2 ways:
@@ -314,7 +314,6 @@ Dissipates heat by converting liquid water into vapor, absorbing heat during the
 - **Indirect** evaporative cooling, which uses heat exchangers to cool air before pumping it into server rooms
 
 </div>
-<!-- Column 2 -->
 <div>
 
 | Metrics | Rating |
@@ -380,7 +379,6 @@ approximately 650,000$
 Submerges IT equipment directly in non-conductive liquid that efficiently absorbs and dissipates heat. The leakage risk is lower than D2C cooling.
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 ![w:450](media/Immersion-Cooling-System-data-center-500x333.webp)
@@ -406,7 +404,6 @@ Submerges IT equipment directly in non-conductive liquid that efficiently absorb
 Improves on the previous method by replacing the liquid with a non-conductive liquid that boils when exposed to the equipment's heat. As the liquid evaporates, it efficiently removes heat, making it one of the fastest and most effective, most expensive  cooling solutions available.
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 | Metrics | Rating |
@@ -434,20 +431,147 @@ Optimizing performance through efficient cable routing
 
 ## Definition
 
-In datacenter when using the term network topology we refer to the <mark>structure and layout of networking equipment</mark> and its relationship to servers.
+In datacenter when using the term network topology we refer to the <mark>structure and layout of networking equipment</mark> and its relationship to servers. <sup>[57][57]</sup>
 
 ---
 
-## 
+## Importance
 
+1. **Performance**: Minimization of server to external endpoints latency
+2. **Scalability**: Ability to adapt to increasing network traffic demands 
+3. **Cost-Effectiveness**: Effective use of networking hardware as to not overspend meaninglessly or even reduce performance
+4. **Security**: Server isolation and malicious traffic filtering
 
+---
+
+## Broadcasting vs Fiber Switching
+
+---
+
+## 3 Tier Topology <i class="fa-solid fa-chart-diagram"></i>
+
+1. **Access tier**: Provides direct connectivity to end-user devices, enabling communication with the network.
+2. **Distribution tier**: Acts as an intermediary by aggregating traffic from access switches and enforcing policies to manage routing and security.
+3. **Core tier**: Ensures high-speed, reliable interconnection between distribution layers and external networks, handling backbone traffic.
+
+---
+
+##
+
+Bad scaling because of few switches and routers. Upgrade means buying more expensive hardware. Multiple racks can be connected to a single switch. Top-of-rack designs may also reduce efficiency in situations where a server rack doesn’t send or receive enough traffic to utilize its switches at full capacity.  three-tier topology is typically not ideal for data centers whose network traffic volumes fluctuate, although it can work well when traffic levels are consistent and predictable. <sup>[58][58],</sup> 
+
+<div class="columns">
+<div>
+
+| Attribute | Score |
+|-|-|
+| Scalability  | 2/5 |
+| Cost-Effectiveness | 2/5 |
+| Maintenance | 5/5 |
+
+</div>
+<div>
+
+![](media/three-tier-hierarchical-architecture.svg)
+
+</div>
+</div>
+
+---
+
+## Top-of-Rack vs End-of-Row $\quad\quad\quad\quad$ Switch Placement <i class="fa-solid fa-hexagon-nodes"></i>
+
+Each server rack has its own switch. Uses more and less expensive switches. Scales naturally based on datacenter capacity. Hard to maintain due to volume of networking hardware.
+
+<div class="columns">
+<div>
+
+| Attribute | Score |
+|-|-|
+| Scalability  | 5/5 |
+| Cost-Effectiveness | 4/5 |
+| Maintenance | 2/5 |
+
+</div>
+<div>
+
+![](media/Top-of-rack-switching-Diagram.jpg)
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div>
+
+| Attribute | Score |
+|-|-|
+| Scalability  | 5/5 |
+| Cost-Effectiveness | 4/5 |
+| Maintenance | 2/5 |
+
+</div>
+<div>
+
+![](media/Top-of-rack-switching-Diagram.jpg)
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div>
+
+| Attribute | Score |
+|-|-|
+| Scalability  | 5/5 |
+| Cost-Effectiveness | 4/5 |
+| Maintenance | 2/5 |
+
+</div>
+<div>
+
+![](media/end-of-row.jpg)
+
+</div>
+</div>
+
+---
+
+## Switched Fabric
+
+Similar to 3 Tier topology but with extra switches making it more scalable. Its shortcoming is the increased complexity and the difficulty to design and implement. Maintaining it is also hard since the team would have to balance traffic and continuously restructure links between servers and the switch fabric. <sup>[61][61]</sup>
+
+<div class="columns">
+<div>
+
+| Attribute | Score |
+|-|-|
+| Scalability  | 3/5 |
+| Cost-Effectiveness | 3/5 |
+| Maintenance | 1/5 |
+
+</div>
+<div>
+
+![](media/switched-fabric.png)
+
+</div>
+</div>
+
+---
+
+## Hybrid Topology
+
+A mix and match of the aforementioned topologies so as to cover the specific scenarios of each datacenter.
 
 ---
 
 # Environmental Impact <i class="fa-solid fa-leaf"></i>
 
 The disruption observed to the nature's equilibrium
-
 
 ---
 
@@ -456,7 +580,6 @@ The disruption observed to the nature's equilibrium
 Diesel generators and Gas Turbines emit:
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 - Nitrogen oxides ($NO_x$)
@@ -471,7 +594,6 @@ Diesel generators and Gas Turbines emit:
 
 ### Causing:
 - Health problems
-- 
 
 </div>
 </div>
@@ -481,7 +603,6 @@ Diesel generators and Gas Turbines emit:
 ## Water Shortage <i class="fa-solid fa-droplet"></i>
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 Most servers follow the <mark>Evaporative Cooling</mark> route because it has great energy efficiency while being cost effective. This means:
@@ -501,7 +622,36 @@ Leading to reduced availability for agriculture, drinking, and ecosystems.
 
 ---
 
-chemical runoff from cooling systems contaminates soil and waterways.
+## Chemical Runoff
+
+During the evaporative cooling process, chemicals can mix with the water. These chemicals may then escape the system, often as part of excess liquid that is drained from the cooling systems after evaporation.
+
+- **Biocides**: Chemicals designed to prevent the growth of bacteria, mold, and algae. Contains isothiazolinones, glutaraldehyde, etc.
+- **Corrosion Inhibitors**: Chemicals that prevent corrosion within cooling systems. Includes phosphates, molybdates, etc. which contribute to eutrophication disturbing marine ecosystems.  
+- **Heavy Metals**: Chemicals originating from the cooling systems' materials. Include zinc, copper, chromium. <sup>[63][63],</sup> <sup>[64][64]</sup>
+
+---
+
+## Eutrophication
+
+An increased load of nutrients ending up at estuaries and coastal waters leading to a cycle of:
+
+<div class="columns">
+<div>
+
+- Algae growth blocks sunlight
+- Plants die
+- Algae dies
+- Bacteria digest dead plants using up oxygen and producing $CO_2$
+- If fish can't swim away they become diseased or die without oxygen. <sup>[65][65]</sup>
+
+</div>
+<div>
+
+<video width="550" src="media/eutrophication.mp4" controls></video>
+
+</div>
+</div>
 
 ---
 
@@ -527,6 +677,15 @@ Children are especially susceptible to respiratory conditions.
 
 ---
 
+## Chemical Runoff <i class="fa-solid fa-flask-vial"></i>
+
+- **Biocides**: Can cause <mark>allergies</mark> and <mark>skin irritation</mark>.
+- **Heavy Metals**: Are <mark>carcinogenic</mark> and can <mark>harm the skin, respiratory system, and kidneys</mark>. <sup>[64][64]</sup>
+
+![bg w:450 right:40%](media/chemical-runoff.jpg)
+
+---
+
 ## Sustained audible noise pollution <i class="fa-solid fa-ear-listen"></i>
 
 Constant sound exposure is associated with:
@@ -545,9 +704,7 @@ Constant sound exposure is associated with:
 ## Infrasound <i class="fa-solid fa-wave-square"></i>
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
-
 
 Infrasound is low frequency sound  below the lower limit of human hearing (around 20Hz)  <sup>[1][1]</sup>
 
@@ -556,7 +713,6 @@ Infrasound is low frequency sound  below the lower limit of human hearing (aroun
 🟨: loud, Y-axis: frequencies, X-axis: time
 
 </div>
-<!-- Column 2 -->
 <div>
 
 ### Known Health Effects <sup>[13][13]</sup>
@@ -635,7 +791,6 @@ Tasks, which rely on in-person <mark>physical dexterity</mark>, are naturally le
 ## Advancements in Robotics
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 \
@@ -686,7 +841,6 @@ Compared to previous technological revolutions, experts say AI is chipping away 
 ## Backlash
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 ![w:500](media/monterey_park_protest.png)
@@ -744,13 +898,13 @@ Most Activity
 
 | Datacenter | Location | Company | LLM |
 | ---------- | -------- | ------- | --- |
-| Stargate Project |  Michigan | OpenAI, Oracle | ChatGPT |
-| Colossus | Memphis | xAI | Grok |
-| Hyperion | Louisiana | Meta | Llama |
-| Google Datacenter| Iowa | Google | Gemini |
-| Fire-Flyer AI Cluster | Zhejiang | Fire-Flyer | Deepseek |
+| Stargate Project |  Abilene, Texas | <center> OpenAI, Oracle <center> | ChatGPT |
+| Colossus | <center> Memphis </center> | <center> xAI </center> | Grok |
+| Hyperion | <center> Louisiana </center> | <center> Meta </center> | Llama |
+| Google Datacenter | <center> <i class="fa-solid fa-earth-americas"></i> </center> | <center> Google <center> | Gemini |
+| Fire-Flyer AI Cluster | <center> Zhejiang </center> | <center> Fire-Flyer </center> | Deepseek |
 
-![bg w:390 right:22%](media/datacenter.webp)
+![bg w:300 right:16%](media/datacenter.webp)
 
 ---
 
@@ -760,10 +914,9 @@ Most Activity
 
 ---
 
-## Specifications <i class="fa-solid fa-file-pen"></i>
+## Colossus Specifications <i class="fa-solid fa-file-pen"></i>
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 | Specs      | Value          |
@@ -773,10 +926,11 @@ Most Activity
 | Company    | xAI |
 | IT Capacity |  |
 
+as of 2025
+
 </div>
 <div>
 
-<!-- Column 2 -->
 Good example because:
 - Purpose built for AI usage
 - Centralized LLM to one datacenter
@@ -788,10 +942,18 @@ Good example because:
 
 ---
 
-## Server Hardware
+## NVIDIA GB200 NVL72
 
-~110,000 NVIDIA GB200 NVL72 GPUs (targeting 1.1 PFlops FP8 compute).
-usually small fp numbers needed for 
+The backbone of the future's datacenters.
+
+- NVLink-connected (faster GPU intercommunication)
+- liquid-cooled 
+- rack-scale design
+
+110,000 NVIDIA GB200 NVL72 GPUs (targeting 1.1 PFlops <mark>FP8</mark> compute)
+> Low bit float operation training is faster, requires less memory and can fit more parameters increasing parameters would give diminishing returns <sup>[68][68]</sup>
+
+![bg right:25%](media/nvidia-gb200-nvl72-ari-2.jpeg)
 
 ---
 
@@ -820,12 +982,14 @@ Solar Turbines: a Caterpillar subsidiary
 </div>
 </div>
 
+<!-- Οι αεριοστρόβιλοι μεθανίου είναι μια απλοποίηση της έκφρασης αεριοστρόβιλοι φυσικού αερίου CNG. gas turbine = αεριοστρόβιλος -->
+
+
 ---
 
 ## Solar Turbines Titan 350
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 |Specifications|Value|
@@ -862,7 +1026,6 @@ source<sup>[22][22],</sup> <sup>[24][24],</sup> <sup>[27][27]</sup>
 ## Solar Turbines SMT 130
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 |Specification|Value|
@@ -898,6 +1061,8 @@ Offers a robust:
 - 15 ppm UHC 
 
 emissions warranty for natural gas fuel.
+
+![bg right:40%](media/SoloNOx.jpg)
 
 ---
 
@@ -953,7 +1118,18 @@ Datacenter construction projects promising to deliver the world to the new age o
 
 ## Colossus
 
-Colossus power generation around 1.1 GW by Q2 2027 and 2 GW total capacity
+Elon Musk announced xAI purchased a third building in Memphis, expanding Colossus to 2 gigawatts total capacity. The facility will house 
+555,000 NVIDIA GPUs purchased for approximately $18 billion—making it the world's largest single-site AI training installation.
+
+555,000 NVIDIA GPUs
+- 520,000 GB200s
+- 30,000 GB300s
+
+With on-site gas power generation
+
+---
+
+![](media/colossus-facilities.png)
 
 ---
 
@@ -963,7 +1139,33 @@ Colossus power generation around 1.1 GW by Q2 2027 and 2 GW total capacity
 
 ---
 
-- ~2 GW by 2030 and end goal 5GW. While Meta has agreements for 1.8 GW of solar and wind, 150 MW geothermal, and even nuclear power extensions, most current power is set to come from gas <sup>[45][45]</sup>
+## Hyperion Specifications <i class="fa-solid fa-file-pen"></i>
+
+<div class="columns">
+<div>
+
+| Specs      | Value     |
+|------------|-----------|
+| Location   | Louisiana |
+| Company    | Meta |
+| IT Capacity | 5GW |
+
+</div>
+<div>
+
+### Capacity and Power Generation
+
+2 GW by 2030 with an end goal of 5GW
+
+Meta has agreements for:
+- 1.8 GW of solar and wind 
+- 150 MW geothermal 
+- nuclear power extensions
+
+However most current power is set to come from gas <sup>[45][45]</sup>
+
+</div>
+</div>
 
 ---
 
@@ -973,47 +1175,51 @@ Colossus power generation around 1.1 GW by Q2 2027 and 2 GW total capacity
 
 ---
 
-## Specifications <i class="fa-solid fa-file-pen"></i>
+## Stargate Specifications <i class="fa-solid fa-file-pen"></i>
 
 <div class="columns">
-<!-- Column 1 -->
 <div>
 
 | Specs      | Value          |
 |------------|----------------|
-| Investment | $500 billion   |
 | Location   | Abilene, Texas |
 | Company    | OpenAI & Oracle|
 | IT Capacity | 4.5 GW |
 
-based on <sup>[10][10]</sup>
+Nvidia GB200 racks
 
 </div>
-
-<!-- Column 2 -->
 <div>
 
-5 new sites
+### 5 additional sites <sup>[10][10]</sup>
+
 - Shackelford County, Texas
 - Milam County, Texas
 - Doña Ana County, New Mexico
 - Lordstown, Ohio
 - a mystery site located somewhere in America's Midwest.
 
-End goal being 10GW of combined capacity.
+End goal being 10GW of combined capacity (4.5GW natural gas turbines). <sup>[66][66]</sup>
 
 </div>
 </div>
 
 ---
 
-## Chips
+## Power Generation
 
-- Nvidia GB200 racks
+- **Solar** power integration with battery storage systems
+- **Small Modular Nuclear Reactors** (SMRs) for establishing a stable baseload power supply. Deployment near demand centers minimizes transmission losses. 
+- Currently still reliant on **natural gas** for the near future. 
+- Planning on implementing **Carbon Capture, Utilization, and Storage** (CCUS) enabling direct carbon dioxide emission capture. <sup>[67][67]</sup>
 
+---
 
+# Thank you for your attention! <i class="fa-solid fa-star"></i>
 
-<!-- ################# Sources ################# -->
+Are there any questions? 
+
+<!-- Οι σύνδεσμοι της βιβλιογραφίας βρίσκονται στο raw HTML αρχείο καθώς και στα αλληλεπιδράσιμα νούμερα εντός της παρουσίασης -->
 
 [1]: https://youtu.be/_bP80DEAbuo "Datacenters Behaving Like Acoustic Weapons - Benn Jordan 2026"
 
@@ -1128,3 +1334,25 @@ End goal being 10GW of combined capacity.
 [56]: https://youtu.be/mUmlv814aJo "Martial arts robots dazzle at 2026 Spring Festival Gala - CGTN Youtube Channel"
 
 [57]: https://www.datacenterknowledge.com/networking/data-center-network-topology-a-guide-to-optimizing-performance "Data Center Network Topology: A Guide to Optimizing Performance - Datacenter Knowledge, Christopher Tozzi"
+
+[58]: https://www.networkacademy.io/ccna/network-fundamentals/three-tier-architecture "Three-Tier Architecture - Network Academy.io"
+
+[59]: https://www.cse.wustl.edu/~jain/cse570-13/ftp/m_03dct.pdf "Data Center Network Topologies - Washington University in Saint Louis"
+
+[60]: https://textbook.cs168.io/datacenter/topology.html "Datacenter Topology - UC Berkeley, cs168 Textbook"
+
+[61]: https://resources.system-analysis.cadence.com/blog/how-switched-fabric-became-the-dominant-data-center-topology "How Switched Fabric Became the Dominant Data Center Topology"
+
+[62]: https://introl.com/blog/xai-colossus-2-gigawatt-expansion-555k-gpus-january-2026 "xAI Colossus Hits 2 GW: 555,000 GPUs, $18B, Largest AI Site"
+
+[63]: https://ketos.co/discharge-from-ai-data-centers-and-how-to-mitigate-contamination "Discharge from AI Data Centers and How to Mitigate Contamination - Ketos"
+
+[64]: https://www.datacenterknowledge.com/sustainability/4-strategies-for-eliminating-data-center-water-pollution "4 Strategies for Eliminating Data Center Water Pollution - Datacenter Knowledge - Christopher Tozzi"
+
+[65]: https://oceanservice.noaa.gov/facts/eutrophication.html "What is eutrophication? - National Ocean Service"
+
+[66]: https://www.datacenterdynamics.com/en/news/openai-pledges-to-pay-its-own-way-to-power-stargate-data-centers/ "OpenAI pledges to “pay its own way” to power Stargate data centers - Datacenter Dynamics"
+
+[67]: https://www.certrec.com/blog/energy-demands-for-openai-stargate-project/ "Energy Demands for OpenAI’s Stargate Project - CERTREC"
+
+[68]: https://nvdam.widen.net/s/wwnsxrhm2w/blackwell-datasheet-3384703 "NVIDIA Blackwell Datasheet"
