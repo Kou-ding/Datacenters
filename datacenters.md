@@ -25,7 +25,10 @@ style: |
 Papadakis Konstantinos Fotios
 AEM: 10371
 
-<!-- Καλησπέρα σας. Ονομάζομαι Παπαδάκης Κωνσταντίνος Φώτης και θα σας παρουσιάσω την πολύπλευρη ανάλυση μου πάνω στα Datacenters εστιάζοντας επί των πλείστων στην εποχή μετά την έκρηξη της τεχνητής νοημοσύνης.  -->
+<!-- 
+Καλησπέρα σας. 
+Ονομάζομαι Παπαδάκης Κωνσταντίνος Φώτης και θα σας παρουσιάσω την πολύπλευρη ανάλυση μου πάνω στα Datacenters, εστιάζοντας επί των πλείστων στην εποχή μετά την έκρηξη της τεχνητής νοημοσύνης.  
+-->
 
 ---
 
@@ -41,13 +44,13 @@ AEM: 10371
 5. [Environmental Impact](#environmental-impact)
 6. [Health Effects](#health-effects)
 7. [Finance](#finance)
-8. [Sociopolitical Aspect](#sociopolitical--aspect)
+8. [Sociopolitical Aspect](#sociopolitical--aspects)
 
 </div>
 <div>
 
 9. [Datacenter Case Study](#datacenter-case-study)
-10. [Ambitious Projects](#ambitious-projects)
+10. [Other Future Projects](#other-future-projects)
 
 <center>
 
@@ -58,7 +61,20 @@ AEM: 10371
 </div>
 </div>
 
-<!-- Οι κύριες θεματικές ενότητες της παρουσίασης  -->
+<!-- 
+Οι κύριες θεματικές μας ενότητες είναι:
+- οι λόγοι που γίνονται σχέδια για τεράστιες επεκτάσεις datacenter
+- οι κύριοι τρόποι κάλυψης των ενεργειακών τους αναγκών
+- οι διάφορες τοπολογίες δικτύου 
+- οι τρόποι ψύξης
+- η επίδραση στο περιβάλλον
+- τα προβλήματα υγείας που προκαλούν
+- η οικονομική πλευρά της ιστορίας
+- τα κοινωνικοπολιτικά
+Και θα κλείσουμε με:
+- ένα πρότζεκτ σταθμό για τα ΑΙ datacenters
+- και λοιπά φιλόδοξα εγχειρήματα  
+-->
 
 ---
 
@@ -66,31 +82,42 @@ AEM: 10371
 
 What's the driving force of datacenter construction and expansions?
 
+
+<!-- 
+Ξεκινώντας,
+Ποιοι είναι οι παράγοντες που οδηγούν στην βιασύνη υλοποίησης αυτών των έργων?
+-->
+
 ---
 
 ## Artificial Intelligence <i class="fa-brands fa-openai"></i>
 
 - Datacenters aren't new
 - Many ambitious datacenter projects
-- Push towards AGI
+- Companies are making huge investments
+- Scale their Large Language model
+- Win the race to AGI <i class="fa-solid fa-flag-checkered"></i>
 - Technology replacing humans in most fields
+- Obtain the largest possible market share
 
 ![bg w:350 right:35%](media/AI-stock-img.png)
 
----
-
-## Resulting Race <i class="fa-solid fa-flag-checkered"></i>
-
-- Companies are making huge investments
-- Scale their Large Language model
-- Win the race to AGI
-- Obtain the largest possible market share
+<!-- 
+Τα datacenters δεν είναι καινούρια. 
+Όμως πρόσφατα έχουν ανακοινωθεί πολλαπλές φιλόδοξες εγκαταστάσεις από όλες τις μεγάλες εταιρίες AI.
+Αυτές οι εταιρίες ευελπιστούν πως κερδίζοντας τον ανταγωνισμό, μπορούν να αποσπάσουν το μεγαλύτερο δυνατό ποσοστό του market που δημιουργείται το οποίο εν δυνάμει μπορεί να αντικαταστήσει μεγάλο μέρος του εργατικού δυναμικού.
+Μια ακόμα παράλληλη είναι η δημιουργία γενικής τεχνητής νοημοσύνης (AGI) η οποία θα άλλαζε πλήρως τα δεδομένα του εργασιακού χώρου για πάντα.
+-->
 
 ---
 
 # Energy Requirements <i class="fa-solid fa-bolt"></i>
 
 Ways to fullfil the insatiable hunger of datacenters for electricity
+
+<!--
+Η τεράστια αυτή έκρηξη κλίμακας των datacenters σε πολύ μικρό χρονικό διάστημα απαιτεί την εύρεση ενεργειακών λύσεων που θα καλύψουν το δυσανάλογα μεγάλο φόρτο.  
+-->
 
 ---
 
@@ -126,6 +153,17 @@ City main line <u>isn't enough</u>. This necessitates the use of local energy ge
 </div>
 </div>
 
+<!--
+Η γραμμή από τις κεντρικούς σταθμούς παραγωγής ηλεκτρικής ενέργειας δεν μπορούν να επωμισθούν τον φόρτο. Τουλάχιστον όχι μέχρι να γίνουν οι ανάλογες προετοιμασίες.
+Στην αρχή το πιο εύκολο και γρήγορο είναι η παραγωγή ενέργειας on-site, δηλαδή εντός της εγκατάστασης, από ορυκτά καύσιμα.
+Αυτά αποτελούν και την κύρια πηγή ενέργειας με ποσοστό 56 τις εκατό.
+Τα πιο δημοφιλή εξ αυτών είναι:
+- Οι γαιάνθρακες οι οποίο χρησιμοποιούνται κυρίως στην Κίνα
+- Το diesel
+- Και μακράν το πιο δημοφιλές το αέριο. Είτε είναι ακατέργαστο φυσικό αέριο, είτε CNG, είτε LPG είτε αέρια χαμηλών BTU.
+Παράλληλα υπάρχουν και οι ανανεώσιμες πηγές ενέργειας
+-->
+
 ---
 
 ## Do Datacenters fit the definition?
@@ -139,6 +177,10 @@ But!
 - The sheer scale of them though doesn't necessarily fit with the definition "**small**, grid-connected or distribution system-connected devices" <sup>[49][49]</sup>
 
 ![bg right:30%](media/xai-solar-farm-colossus-data-center.jpg)
+
+<!--
+
+-->
 
 ---
 
@@ -193,6 +235,153 @@ Turbines can be powered by:
 CNG risk of ignition is low so even though LPG is highly inflammable it is the more likely of the two to ignite.
 
 ---
+
+# Network $\quad$ topology <i class="fa-solid fa-network-wired"></i>
+
+Optimizing performance through efficient cable routing
+
+---
+
+## Definition
+
+In datacenter when using the term network topology we refer to the <mark>structure and layout of networking equipment</mark> and its relationship to servers. <sup>[57][57]</sup>
+
+---
+
+## Importance
+
+1. **Performance**: Minimization of server to external endpoints latency
+2. **Scalability**: Ability to adapt to increasing network traffic demands 
+3. **Cost-Effectiveness**: Effective use of networking hardware as to not overspend meaninglessly or even reduce performance
+4. **Security**: Server isolation and malicious traffic filtering
+
+---
+
+## Broadcasting vs Fiber Switching
+
+---
+
+## 3 Tier Topology <i class="fa-solid fa-chart-diagram"></i>
+
+1. **Access tier**: Provides direct connectivity to end-user devices, enabling communication with the network.
+2. **Distribution tier**: Acts as an intermediary by aggregating traffic from access switches and enforcing policies to manage routing and security.
+3. **Core tier**: Ensures high-speed, reliable interconnection between distribution layers and external networks, handling backbone traffic.
+
+---
+
+##
+
+Bad scaling because of few switches and routers. Upgrade means buying more expensive hardware. Multiple racks can be connected to a single switch. Top-of-rack designs may also reduce efficiency in situations where a server rack doesn’t send or receive enough traffic to utilize its switches at full capacity.  three-tier topology is typically not ideal for data centers whose network traffic volumes fluctuate, although it can work well when traffic levels are consistent and predictable. <sup>[58][58],</sup> 
+
+<div class="columns">
+<div>
+
+| Attribute | Score |
+|-|-|
+| Scalability  | 2/5 |
+| Cost-Effectiveness | 2/5 |
+| Maintenance | 5/5 |
+
+</div>
+<div>
+
+![](media/three-tier-hierarchical-architecture.svg)
+
+</div>
+</div>
+
+---
+
+## Top-of-Rack vs End-of-Row $\quad\quad\quad\quad$ Switch Placement <i class="fa-solid fa-hexagon-nodes"></i>
+
+Each server rack has its own switch. Uses more and less expensive switches. Scales naturally based on datacenter capacity. Hard to maintain due to volume of networking hardware.
+
+<div class="columns">
+<div>
+
+| Attribute | Score |
+|-|-|
+| Scalability  | 5/5 |
+| Cost-Effectiveness | 4/5 |
+| Maintenance | 2/5 |
+
+</div>
+<div>
+
+![](media/Top-of-rack-switching-Diagram.jpg)
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div>
+
+| Attribute | Score |
+|-|-|
+| Scalability  | 5/5 |
+| Cost-Effectiveness | 4/5 |
+| Maintenance | 2/5 |
+
+</div>
+<div>
+
+![](media/Top-of-rack-switching-Diagram.jpg)
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div>
+
+| Attribute | Score |
+|-|-|
+| Scalability  | 5/5 |
+| Cost-Effectiveness | 4/5 |
+| Maintenance | 2/5 |
+
+</div>
+<div>
+
+![](media/end-of-row.jpg)
+
+</div>
+</div>
+
+---
+
+## Switched Fabric
+
+Similar to 3 Tier topology but with extra switches making it more scalable. Its shortcoming is the increased complexity and the difficulty to design and implement. Maintaining it is also hard since the team would have to balance traffic and continuously restructure links between servers and the switch fabric. <sup>[61][61]</sup>
+
+<div class="columns">
+<div>
+
+| Attribute | Score |
+|-|-|
+| Scalability  | 3/5 |
+| Cost-Effectiveness | 3/5 |
+| Maintenance | 1/5 |
+
+</div>
+<div>
+
+![](media/switched-fabric.png)
+
+</div>
+</div>
+
+---
+
+## Hybrid Topology
+
+A mix and match of the aforementioned topologies so as to cover the specific scenarios of each datacenter.
+
+---
+
 
 # Cooling <i class="fa-solid fa-snowflake"></i>
 
@@ -422,153 +611,6 @@ Improves on the previous method by replacing the liquid with a non-conductive li
 
 ---
 
-
-# Network $\quad$ topology <i class="fa-solid fa-network-wired"></i>
-
-Optimizing performance through efficient cable routing
-
----
-
-## Definition
-
-In datacenter when using the term network topology we refer to the <mark>structure and layout of networking equipment</mark> and its relationship to servers. <sup>[57][57]</sup>
-
----
-
-## Importance
-
-1. **Performance**: Minimization of server to external endpoints latency
-2. **Scalability**: Ability to adapt to increasing network traffic demands 
-3. **Cost-Effectiveness**: Effective use of networking hardware as to not overspend meaninglessly or even reduce performance
-4. **Security**: Server isolation and malicious traffic filtering
-
----
-
-## Broadcasting vs Fiber Switching
-
----
-
-## 3 Tier Topology <i class="fa-solid fa-chart-diagram"></i>
-
-1. **Access tier**: Provides direct connectivity to end-user devices, enabling communication with the network.
-2. **Distribution tier**: Acts as an intermediary by aggregating traffic from access switches and enforcing policies to manage routing and security.
-3. **Core tier**: Ensures high-speed, reliable interconnection between distribution layers and external networks, handling backbone traffic.
-
----
-
-##
-
-Bad scaling because of few switches and routers. Upgrade means buying more expensive hardware. Multiple racks can be connected to a single switch. Top-of-rack designs may also reduce efficiency in situations where a server rack doesn’t send or receive enough traffic to utilize its switches at full capacity.  three-tier topology is typically not ideal for data centers whose network traffic volumes fluctuate, although it can work well when traffic levels are consistent and predictable. <sup>[58][58],</sup> 
-
-<div class="columns">
-<div>
-
-| Attribute | Score |
-|-|-|
-| Scalability  | 2/5 |
-| Cost-Effectiveness | 2/5 |
-| Maintenance | 5/5 |
-
-</div>
-<div>
-
-![](media/three-tier-hierarchical-architecture.svg)
-
-</div>
-</div>
-
----
-
-## Top-of-Rack vs End-of-Row $\quad\quad\quad\quad$ Switch Placement <i class="fa-solid fa-hexagon-nodes"></i>
-
-Each server rack has its own switch. Uses more and less expensive switches. Scales naturally based on datacenter capacity. Hard to maintain due to volume of networking hardware.
-
-<div class="columns">
-<div>
-
-| Attribute | Score |
-|-|-|
-| Scalability  | 5/5 |
-| Cost-Effectiveness | 4/5 |
-| Maintenance | 2/5 |
-
-</div>
-<div>
-
-![](media/Top-of-rack-switching-Diagram.jpg)
-
-</div>
-</div>
-
----
-
-<div class="columns">
-<div>
-
-| Attribute | Score |
-|-|-|
-| Scalability  | 5/5 |
-| Cost-Effectiveness | 4/5 |
-| Maintenance | 2/5 |
-
-</div>
-<div>
-
-![](media/Top-of-rack-switching-Diagram.jpg)
-
-</div>
-</div>
-
----
-
-<div class="columns">
-<div>
-
-| Attribute | Score |
-|-|-|
-| Scalability  | 5/5 |
-| Cost-Effectiveness | 4/5 |
-| Maintenance | 2/5 |
-
-</div>
-<div>
-
-![](media/end-of-row.jpg)
-
-</div>
-</div>
-
----
-
-## Switched Fabric
-
-Similar to 3 Tier topology but with extra switches making it more scalable. Its shortcoming is the increased complexity and the difficulty to design and implement. Maintaining it is also hard since the team would have to balance traffic and continuously restructure links between servers and the switch fabric. <sup>[61][61]</sup>
-
-<div class="columns">
-<div>
-
-| Attribute | Score |
-|-|-|
-| Scalability  | 3/5 |
-| Cost-Effectiveness | 3/5 |
-| Maintenance | 1/5 |
-
-</div>
-<div>
-
-![](media/switched-fabric.png)
-
-</div>
-</div>
-
----
-
-## Hybrid Topology
-
-A mix and match of the aforementioned topologies so as to cover the specific scenarios of each datacenter.
-
----
-
 # Environmental Impact <i class="fa-solid fa-leaf"></i>
 
 The disruption observed to the nature's equilibrium
@@ -610,8 +652,6 @@ Most servers follow the <mark>Evaporative Cooling</mark> route because it has gr
 - Then released into the atmosphere
 - And taken out of immediate human usage
 
-Leading to reduced availability for agriculture, drinking, and ecosystems.
-
 </div>
 <div>
 
@@ -619,6 +659,8 @@ Leading to reduced availability for agriculture, drinking, and ecosystems.
 
 </div>
 </div>
+
+Leading to reduced availability for agriculture, drinking, and ecosystems.
 
 ---
 
@@ -921,12 +963,11 @@ Most Activity
 
 | Specs      | Value          |
 |------------|----------------|
-| Investment |  |
 | Location   | Memphis, Texas |
 | Company    | xAI |
-| IT Capacity |  |
+| IT Capacity | 1.5GW + 0.425GW |
 
-as of 2025
+as of 13/3/2026 <sup>[69][69]</sup>
 
 </div>
 <div>
@@ -936,6 +977,68 @@ Good example because:
 - Centralized LLM to one datacenter
 - Already built
 - Renowned for its scale
+
+</div>
+</div>
+
+<!-- Τα πολλαπλά κτίρια που στεγάζουν τα datacenters χρησιμοποιούν κάρτες της NVIDIA όπως τις καινούριες GB200, GB300 και τις παλιές H100, H200 -->
+
+---
+
+## GPUs
+
+xAI incorporates <mark>GB200</mark>, GB300, H100 (legacy), H200 (legacy) GPUs across Colossus 1, 2 and MACROHARDRR. <sup>[62][62]</sup>
+
+
+<div class="columns">
+<div>
+
+
+
+With on-site gas power generation
+
+</div>
+<div>
+
+![](media/colossus-facilities.png)
+
+</div>
+</div>
+
+---
+
+## Colossus 1 Bird's Eye View
+
+<div class="columns">
+<div>
+
+
+
+With on-site gas power generation
+
+</div>
+<div>
+
+![w:500](media/colossus-1-birdseye.png)
+
+</div>
+</div>
+
+---
+
+## Colossus 2 Bird's Eye View
+
+<div class="columns">
+<div>
+
+
+
+With on-site gas power generation
+
+</div>
+<div>
+
+![w:500](media/colossus-2-birdseye.png)
 
 </div>
 </div>
@@ -1096,6 +1199,13 @@ They can provide 4 hours of power. They are planing to deploy 200 Megapack for a
 
 xAI plans an 88-acre solar array to provide power to Colossus <sup>[44][44]</sup>
 
+150 MW from Memphis Light, Gas, and Water (MLGW) and the Tennessee Valley Authority (TVA)
+Fast installation meant inability to immediately draw from the grid. From May 2025 Colossus 1 should be sustained by TVA alone, which sources about 60% of its capacity from:
+- hydroelectric, 
+- solar, 
+- wind,
+- and nuclear.
+
 ---
 
 ## Legally Ambiguous Operation
@@ -1110,26 +1220,9 @@ Net annual nitrogen oxide emission reductions of up to 296 tons by 2032,” <sup
 
 ---
 
-# Future Projects <i class="fa-solid fa-meteor"></i>
+# Other Future Projects <i class="fa-solid fa-meteor"></i>
 
 Datacenter construction projects promising to deliver the world to the new age of ai augmented computation.
-
----
-
-## Colossus
-
-Elon Musk announced xAI purchased a third building in Memphis, expanding Colossus to 2 gigawatts total capacity. The facility will house 
-555,000 NVIDIA GPUs purchased for approximately $18 billion—making it the world's largest single-site AI training installation.
-
-555,000 NVIDIA GPUs
-- 520,000 GB200s
-- 30,000 GB300s
-
-With on-site gas power generation
-
----
-
-![](media/colossus-facilities.png)
 
 ---
 
@@ -1356,3 +1449,7 @@ Are there any questions?
 [67]: https://www.certrec.com/blog/energy-demands-for-openai-stargate-project/ "Energy Demands for OpenAI’s Stargate Project - CERTREC"
 
 [68]: https://nvdam.widen.net/s/wwnsxrhm2w/blackwell-datasheet-3384703 "NVIDIA Blackwell Datasheet"
+
+[69]: https://epoch.ai/data/data-centers "Frontier Data Centers"
+
+[70]: https://www.tomshardware.com/tech-industry/artificial-intelligence/musks-colossus-is-fully-operational-with-200-000-gpus-backed-by-tesla-batteries-phase-2-to-consume-300-mw-enough-to-power-300-000-homes "Musk’s Colossus is fully operational with 200,000 GPUs backed by Tesla batteries — Phase 2 to consume 300 MW, enough to power 300,000 homes - TomsHardware"
