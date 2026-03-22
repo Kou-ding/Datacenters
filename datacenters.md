@@ -39,22 +39,20 @@ AEM: 10371
 
 1. [AI Boom](#ai-boom)
 2. [Energy Requirements](#energy-requirements)
-3. [Cooling](#cooling)
-4. [Network topology](#network--topology)
+3. [Network topology](#network--topology)
+4. [Cooling](#cooling)
 5. [Environmental Impact](#environmental-impact)
 6. [Health Effects](#health-effects)
 7. [Finance](#finance)
 8. [Sociopolitical Aspect](#sociopolitical--aspects)
+9. [Datacenter Case Study](#datacenter-case-study)
 
 </div>
 <div>
 
-9. [Datacenter Case Study](#datacenter-case-study)
-10. [Other Future Projects](#other-future-projects)
-
 <center>
 
-![w:300](media/stack-of-books.png)
+![w:400](media/stack-of-books.png)
 
 </center>
 
@@ -63,7 +61,7 @@ AEM: 10371
 
 <!-- 
 Οι κύριες θεματικές μας ενότητες είναι:
-- οι λόγοι που γίνονται σχέδια για τεράστιες επεκτάσεις datacenter
+- οι λόγοι που γίνονται σχέδια για τεράστιες επεκτάσεις datacenter (εστιάζοντας στην Αμερική)
 - οι κύριοι τρόποι κάλυψης των ενεργειακών τους αναγκών
 - οι διάφορες τοπολογίες δικτύου 
 - οι τρόποι ψύξης
@@ -158,7 +156,7 @@ City main line <u>isn't enough</u>. This necessitates the use of local energy ge
 Στην αρχή το πιο εύκολο και γρήγορο είναι η παραγωγή ενέργειας on-site, δηλαδή εντός της εγκατάστασης, από ορυκτά καύσιμα.
 Αυτά αποτελούν και την κύρια πηγή ενέργειας με ποσοστό 56 τις εκατό.
 Τα πιο δημοφιλή εξ αυτών είναι:
-- Οι γαιάνθρακες οι οποίο χρησιμοποιούνται κυρίως στην Κίνα
+- Οι γαιάνθρακες οι οποίοι χρησιμοποιούνται κυρίως στην Κίνα
 - Το diesel
 - Και μακράν το πιο δημοφιλές το φυσικό αέριο. Συγκεκριμένα το CNG, αλλιώς γνωστό και ως μεθάνιο. Οι άλλες υποκατηγορίες του είναι το ακατέργαστο φυσικό αέριο, το LPG και αέρια χαμηλών BTU.
 Παράλληλα υπάρχουν και οι ανανεώσιμες πηγές ενέργειας όπως:
@@ -577,7 +575,19 @@ The origin of datacenter cooling. Rooms dedicated to housing IT equipped with tr
 </div>
 </div>
 
+<!--
+Η πρώτη μέθοδος αποτελεί την πρώτη μέθοδο που εφαρμόστηκε στα πρώτα datacenters πολύ μικρότερης κλίμακας.
+Χρησιμοποιεί κλιματιστικά 
+- αρχικά ήταν απλά σπιτιού και
+- έπειτα κατασκευάστηκαν και πιο ισχυρά για πιο απαιτητικές χρήσεις
 
+Έχουν:
+- Κακή απόδοση
+- Δεν είναι βιώσιμα επειδή χρησιμοποιούν τόση ενέργεια
+- Όμως δεν απαιτούν μεγάλη αρχική επένδυση 
+
+Στη φωτογραφία βλέπουμε ένα 13 kW CRAC της Coolnet.
+-->
 
 ---
 
@@ -604,6 +614,19 @@ Dissipates heat by converting liquid water into vapor, absorbing heat during the
 </div>
 </div>
 
+<!--
+Η μέθοδος της εξάτμισης από την άλλη πλευρά απομακρύνει την θερμότητα μετατρέποντας νερό σε ατμό.
+
+Είναι η κύρια μέθοδος ψύξης στα datacenters επειδή:
+- Είναι πολύ ενεργειακά αποδοτικό και 
+- χρειάζεται ελάχιστη αρχική επένδυση 
+- όμως δεν είναι βιώσιμο καθώς χρησιμοποιεί μεγάλες ποσότητες νερού αφαιρώντας τις από τα οικοσυστήματα και τον άνθρωπο
+
+Υπάρχουν δύο υποκατηγορίες αυτής.
+- Η άμεση: στην οποία ο αέρας που εισέρχεται στα δωμάτια των server περνάει πρώτα από μια νοτισμένη μεμβράνη
+- Και η έμμεση η οποία χρησιμοποιεί εναλλάκτες θερμότητας για να κρυώσουν τον αέρα που εισέρχεται στα δωμάτια των server
+-->
+
 ---
 
 ## Direct
@@ -615,6 +638,13 @@ The humidifier adds water to the incoming air stream:
 
 This conditioned air is then simply supplied to the room with a high percentage of the room air being exhausted rather than re-circulated to maintain a low humidity in the room.
 
+<!--
+Στην άμεση ο υγραντήρας προσθέτει νερό στον αέρα 
+- ανεβάζοντας την υγρασία του και 
+- ρίχνοντας την θερμοκρασία του
+Ο περισσότερος αέρας απομακρύνεται και δεν παραμένει στο δωμάτιο για να κρατηθεί χαμηλή η υγρασία
+-->
+
 ---
 
 ## Indirect
@@ -623,6 +653,15 @@ Cool outside air is drawn through a heat recovery unit then immediately exhauste
 <sup>[50][50]</sup>
 
 ![bg w:700 left:50%](media/know-indirect-evap-cool.jpg)
+
+<!--
+Στην έμμεση από την άλλη ο εξωτερικός αέρας περνάει από την μονάδα ανάκτησης θερμότητας και απευθείας απομακρύνεται. 
+Ο εσωτερικός αέρας από την άλλη, περνάει και αυτός από την μονάδα ανάκτησης θερμότητας και διοχετεύεται εκ νέου στο δωμάτιο.
+
+Έτσι στην ουσία μεταφέρουμε την θερμότητα απο το δωμάτιο στο περιβάλλον χωρίς να αναμιγνύουμε τον μέσα και έξω αέρα.
+
+Πολλές φορές αυτό δεν το θέλουμε λόγω της κακής εξωτερικής ποιότητας αέρα και επειδή η εγκατάστασή μας μπορεί να πρέπει να έχει συνθήκες απουσίας σωματιδίων.  
+-->
 
 ---
 
@@ -640,6 +679,14 @@ Prone to system disruption (coolant leakage)
 
 ![bg right:40% w:700](media/direct-to-chip-liquidcooling.webp)
 
+<!--
+Τα συστήματα άμεσης ψύξης κατευθείαν στο τσιπ μεταφέρουν ψυκτικό υγρό κατευθείαν στα στοιχεία του server. 
+Έτσι είναι:
+- πολύ ενεργειακά αποδοτικά
+- λειτουργούν σε κλειστό κύκλο και άρα δεν αποσπούν νερό από οικοσυστήματα (τις περισσοτερες φορές δεν είναι καν νερό αλλά κάποιο ψυκτικό υγρό)
+- όμως η αρχική επένδυση είναι αρκετά μεγάλη
+-->
+
 ---
 
 ## Close up Look
@@ -650,6 +697,16 @@ Prone to system disruption (coolant leakage)
 $\quad\quad\quad\quad\quad$<i class="fa-solid fa-down-long"></i>
 
 approximately 650,000$
+
+<!--
+Εδώ βλέπουμε από κοντά ένα τέτοιο σύστημα εντός server rack
+- Από τον ένα σωλήνα εισέρχεται το ψυκτικό υγρό 
+- Από τον άλλον εξέρχεται 
+- Στο μεταξύ περνάει από τα στοιχεία του server που χρειάζονται ψύξη
+(CPU RAM ROM etc)
+
+Για 1 MW server εξοπλισμό πρέπει να δαπανήσουμε περίπου 650,000 $ για την ψύξη του με D2C (direct to chip cooling)
+-->
 
 ---
 
@@ -676,6 +733,17 @@ Submerges IT equipment directly in non-conductive liquid that efficiently absorb
 </div>
 </div>
 
+<!--
+Η ψύξη βύθισης μίας φάσης βυθίζει τον εξοπλισμό μας σε κάποιο μη αγώγιμο υγρό για να απομακρύνει την θερμότητα.
+
+Είναι
+- Πολύ ενεργειακά αποδοτικό
+- Βιώσιμο
+- Όμως το αρχικό του κόστος είναι απαγορευτικό για τις περισσότερες εγκαταστάσεις
+
+Σε περίπτωση διαρροής το πρόβλημα επιλύεται πιο εύκολα σε σχέση με D2C.
+-->
+
 ---
 
 ## Multi-Phase Immersion Cooling
@@ -699,11 +767,24 @@ Improves on the previous method by replacing the liquid with a non-conductive li
 </div>
 </div>
 
+<!--
+Τέλος στη ψύξη βύθισης πολλαπλών φάσεων το υγρό αλλάζει φάση και απομακρύνει την θερμότητα ακόμα πιο γρήγορα
+
+Ειναι:
+- Εξαιρετικά ενεργειακά αποδοτικό
+- Βιώσιμο
+- Όμως η αρχική επένδυση είναι πιο απαγορευτική ακόμα και από την προηγούμενη υλοποίηση
+-->
+
 ---
 
 # Environmental Impact <i class="fa-solid fa-leaf"></i>
 
-The disruption observed to the nature's equilibrium
+The disruption of nature's equilibrium
+
+<!--
+Η επόμενη συζήτηση περιστρέφεται γύρω από τις περιβαλλοντικές συνέπειες των datacenters. 
+-->
 
 ---
 
@@ -726,9 +807,26 @@ Diesel generators and Gas Turbines emit:
 
 ### Causing:
 - Health problems
+- Acid rain
+- Climate change
 
 </div>
 </div>
+
+<!--
+Η λειτουργία σταθμών Diesel και Αεριοστρόβιλικών σταθμών εκλύει τους εξής ρίπους στην ατμόσφαιρα:
+- Οξείδια του αζώτου
+- Διοξείδιο του άνθρακα
+- Μονοξείδιο του Άνθρακα
+- Οξείδια του θείου
+- Άκαυστους Υδρογονάνθρακες και
+- Καπνό
+
+Τα οποία προκαλούν:
+- Προβλήματα υγείας που θα δούμε παρακάτω...
+- Όξινη βροχή και
+- Κλιματική αλλαγή
+-->
 
 ---
 
@@ -752,6 +850,19 @@ Most servers follow the <mark>Evaporative Cooling</mark> route because it has gr
 
 Leading to reduced availability for agriculture, drinking, and ecosystems.
 
+<!--
+Η ευρεία χρήση των συστημάτων ψύξης με εξάτμιση συνεπάγεται:
+- Μετατροπή του μεγαλύτερου ποσοστού του νερού που χρησιμοποιείται για ψύξη σε ατμό
+- Έκλυση αυτού στο περιβάλλον ( αν και ορισμένες εγκαταστάσεις εξετάζουν το ενδεχόμενο ανακύκλωσης του νερού ) 
+- Αφαίρεση από άμεση ανθρώπινη χρήση
+
+Συνεπώς μειώνεται η ποσότητα 
+- Πόσιμου νερού
+- Του νερού που μπορεί να διατεθεί στην γεωπονία, 
+- στους ανθρώπους για οικιακή κατανάλωση
+- Και στα ποικίλα οικοσυστήματα
+-->
+
 ---
 
 ## Chemical Runoff
@@ -761,6 +872,15 @@ During the evaporative cooling process, chemicals can mix with the water. These 
 - **Biocides**: Chemicals designed to prevent the growth of bacteria, mold, and algae. Contains isothiazolinones, glutaraldehyde, etc.
 - **Corrosion Inhibitors**: Chemicals that prevent corrosion within cooling systems. Includes phosphates, molybdates, etc. which contribute to eutrophication disturbing marine ecosystems.  
 - **Heavy Metals**: Chemicals originating from the cooling systems' materials. Include zinc, copper, chromium. <sup>[63][63],</sup> <sup>[64][64]</sup>
+
+<!--
+Από τα ίδια συστήματα ψύξης σύνηθες φαινόμενο είναι και ρίψη χημικών αποβλήτων στην πηγή από την οποία αντλούν το νερό. Αυτό γίνεται μέσω σωλήνων οι οποίοι απομακρύνουν το θερμό νερό από την εγκατάσταση.
+
+Το νερό αυτό περιέχει:
+- Βιοκτόνα, δηλαδή χημικά που αποτρέπουν την ανάπτυξη μικροβίων μούχλας και άλγης
+- Αναστολείς διάβρωσης, δηλαδή χημικά που αποτρέπουν την διάβρωση των συστημάτων ψύξης
+- Και βαρέα μέταλλα, τα οποία προέρχονται απευθείας από τα μέταλλα που απαρτίζουν τα συτήματα ψύξης (Χαλκό, Ψευδάργυρο, Χρώμιο)
+-->
 
 ---
 
@@ -785,11 +905,28 @@ An increased load of nutrients ending up at estuaries and coastal waters leading
 </div>
 </div>
 
+<!--
+Οι αναστολείς διάβρωσης συγκεκριμένα αποτελούν θρεπτικά συστατικά χρήσιμα για την θαλάσσια ζωή. Η αποβολή αυτών καταλήγοντας σε εκβολές ποταμών και παράκτια ύδατα οδηγούν στον εξής φαύλο κύκλο:
+
+(Προτιμάτε να δούμε το βίντεο του ενός λεπτού?)
+
+1. Η άλγη θρέφεται
+2. Μεγαλώνει και μπλοκάρει τον ήλιο απο το να διεισδύσει στη θάλασσα
+3. Τα φυτά πεθαίνουν  
+4. Η αλγη πεθαίνει και αυτή
+5. Βακτήρια καταναλώνουν νεκρά χρησιμοποιώντας οξυγόνο και παράγοντας διοξείδιο του άνθρακα
+6. Αν τα ψάρια δεν μπορούν να απομακρυνθούν εγκαίρως πεθαίνουν και αυτά από έλλειψη οξυγόνου
+-->
+
 ---
 
 # Health Effects <i class="fa-solid fa-heart-pulse"></i>
 
 The risks datacenters pose to the public's well being
+
+<!--
+Καιρός να μιλήσουμε και για τις επιπτώσεις των datacenters στη υγεία του ανθρώπου.
+-->
 
 ---
 
@@ -807,6 +944,17 @@ Children are especially susceptible to respiratory conditions.
 
 ![bg w:350 right:30%](media/NO2.png)
 
+<!--
+Τα οξείδια του αζώτου που εκλύουν οι αεριοστρόβιλοι είναι γνωστό ότι προκαλούν:
+- Ερεθισμό του αναπνευστικού
+- Δύσπνοια
+- Άσθμα
+- Παθήσεις του αναπνευστικού 
+- Και καρκίνο
+
+Με τα παιδιά να είναι ιδιαίτερα ευάλωτα σε αναπνευστικά προβλήματα (ιδίως παιδικό άσθμα )
+-->
+
 ---
 
 ## Chemical Runoff <i class="fa-solid fa-flask-vial"></i>
@@ -815,6 +963,12 @@ Children are especially susceptible to respiratory conditions.
 - **Heavy Metals**: Are <mark>carcinogenic</mark> and can <mark>harm the skin, respiratory system, and kidneys</mark>. <sup>[64][64]</sup>
 
 ![bg w:450 right:40%](media/chemical-runoff.jpg)
+
+<!--
+Από τα χημικά απόβλητα:
+- Τα βιοκτόνα προκαλούν αλλεργίες και ερεθισμό του δέρματος
+- Ενώ τα βαρέα μέταλλα είναι καρκινογόνα και προκαλούν προβλήματα στο αναπνευστικό και στα στα νεφρά
+-->
 
 ---
 
@@ -830,6 +984,18 @@ Constant sound exposure is associated with:
 
 
 ![bg w:350 right:30%](media/noise-pollution.webp)
+
+<!--
+Κατά την λειτουργία τους τα datacenters παράγουν παρατεταμένη ηχορύπανση στο φάσμα του ήχου που ακούν και δεν ακούν οι άνθρωποι.
+
+Ξεκινώντας με το φάσμα που ακούν, τους προκαλεί:
+- Ενόχληση
+- Διατάραξη ύπνου
+- Καρδιαγγειακές παθήσεις
+- Διατάραξη της γνωστικής ανάπτυξης των παιδιών
+- Χειροτέρευση της ψυχολογικής και σωματικής ευημερίας
+- Επιληπτικά επεισόδια
+-->
 
 ---
 
@@ -859,11 +1025,31 @@ Infrasound is low frequency sound  below the lower limit of human hearing (aroun
 </div>
 </div>
 
+<!--
+Κάτω από τα 20 Hz βρίσκεται το φάσμα των ήχων που δεν γίνονται αντιληπτοί από την ανθρώπινη ακοή.
+
+Για παράδειγμα στο παρακάτω σχήμα βλέπουμε ότι κάτω από την μωβ γραμμή (δηλαδή τα 20 Hz) έχουμε αυξημένη ένταση ήχου.
+
+Στο συγκεκριμένο φαινόμενο δεν μπορούμε ενστικτωδώς να αποδώσουμε κάποια συνέπεια επειδή άλλωστε δεν ακούμε τον ήχο αυτό οπότε δεν βγάζει απαραίτητα νόημα να μπορεί να μας επηρεάσει.
+
+Όμως πολλαπλές έρευνες αποτυπώνουν ότι οι υπόηχοι προκαλούν:
+- Αυξηση της κορτιζόλης (δηλαδή του στρες και της υπέρτασης)
+- Ναυτία και ζάλη
+- Vibroacoustic disease 
+- Χάσιμο ακοής υψηλής συχνότητας
+- Δύσπνοια
+- Κρίσεις άγχους και κατάθλιψη
+-->
+
 ---
 
 # Finance <i class="fa-solid fa-money-bill"></i>
 
 The economic side of the story
+
+<!--
+Στη συνέχεια στα Οικονομικά...
+-->
 
 ---
 
@@ -881,11 +1067,29 @@ Manufacturers are in return:
 
 The AI build-out is colliding with a supply chain that cannot meet its physical requirements. <sup>[46][46],</sup> <sup>[47][47]</sup>
 
+<!--
+Για την κατασκευή των Datacenters οι εταιρίες:
+- εκφέρουν ανοικτά παραγγελίες για μνήμη 
+- ουσιαστικά εννοώντας ότι θα αγοράσουν όση μνήμη οι κατασκευαστικές εταιρίες μπορούν να προσφέρουν σε οποιαδήποτε τιμή
+
+Αυτό έχει ως συνέπεια οι κατασκευαστές να:
+- Προτεραιοποιούν την παραγωγή μνημών για τους παραγωγούς datacenter οι οποίοι τους προσφέρουν υψηλά ποσοστά κέρδους
+- Και έτσι ανεβαίνουν υπερβολικά πολύ οι τιμές για τους κανονικούς καταναλωτές
+
+Όπως έχει ειπωθεί πολύ εύστοχα:
+
+"Η κατασκευή των υποδομών για το AI έρχεται σε σύγκρουση με την εφοδιαστική αλυσίδα η οποία δεν μπορεί να ανταπεξέλθει στις απαιτήσεις της"
+-->
+
 ---
 
 # Sociopolitical $\quad$ Aspects <i class="fa-solid fa-scale-balanced"></i>
 
 The effects that reverberate throughout the 
+
+<!--
+Πως έχουν αντηχήσει τα datacenters τον κοινωνικοπολιτικό ιστό?  
+-->
 
 ---
 
@@ -900,6 +1104,16 @@ Stargate
 
 ![bg w:350 right:30%](media/find-a-job.png)
 
+<!--
+Στο κομμάτι της ανεργίας:
+- Υπόσχονται εκατοντάδες χιλιάδες θέσεις εργασίας
+- Και δεκάδες χιλιάδες μόλις τελειώσει η κατασκευή των έργων
+
+Όμως οι ειδικοί προειδοποιούν πως
+- Μόλις φτιαχτεί ένα τέτοιο έργο το ανθρώπινο δυναμικό απαραίτητο για την εύρυθμη λειτουργία του είναι ελάχιστο 
+- Σε ένα ακραίο παράδειγμα μπορεί να απασχολεί μόλις 57 άτομα.
+-->
+
 ---
 
 ## Post AI World jobs
@@ -907,6 +1121,12 @@ Stargate
 Many companies announce layoffs to cut costs tends to show that AI is a revolution like no other, one that doesn't create more jobs than it replaced. The paper with the predictions
 
 ![bg w:350 right:30%](media/job-seeking.png)
+
+<!--
+Παράλληλα πολλές εταιρίες πληροφορικής ανακοινώνουν κύματα απολύσεων η μια μετά την άλλη δημιουργώντας το ερώτημα στον κόσμο:
+
+Είναι η επανάσταση του AI μια τεχνολογική επανάσταση που δεν γεννάει τόσες δουλειές όσες αντικαθιστά?
+-->
 
 ---
 
@@ -917,6 +1137,16 @@ Tasks which are heavily reliant on the standardized <mark>processing of textual 
 Tasks, which rely on in-person <mark>physical dexterity</mark>, are naturally less exposed to AI. (recent advancements in robotics question this) 
 
 ![bg w:500 right:40%](media/AIOE-jobs.png)
+
+<!--
+Στο συγκεκριμένο paper ερευνάται αυτό ακριβώς. 
+
+Οι συγγραφείς διαχωρίζουν τις δουλειές σε δυο κατηγορίες:
+- Αυτές που απαιτούν την επεξεργασία πληροφοριών εντός context στις οποίες είναι καλό το AI
+- Και σε αυτές που απαιτούν υψηλή σωματική επιδεξιότητα
+
+Αν και αυτό είναι αμφιλεγόμενο...
+-->
 
 ---
 
@@ -940,6 +1170,14 @@ Growth is rapid and real life applications are imminent.
 </div>
 </div>
 
+<!--
+Εδώ μπορούμε να δούμε ένα σύντομο απόσπασμα από το ανοιξιάτικο φεστιβάλ της Κίνας.
+
+(Βίντεο 3.00-3.22)
+
+Η ικανή βελτίωση των ρομπότ είναι αναπόφευκτη όμως ίσως όχι οικονομικά βιώσιμη τον πρώτο καιρό.
+-->
+
 ---
 
 ## Unemployment
@@ -950,6 +1188,14 @@ Growth is rapid and real life applications are imminent.
 
 More unemployment for the least exposure workers. <sup>[48][48]</sup>
 
+<!--
+Συνεχίζοντας με την έρευνα χωρίζουμε τους ανθρώπους σε 5 κατηγορίες 
+- με 1 να είναι οι λιγότερο επηρεασμένοι από το AI
+- και 5 να είναι οι περισσότερο επηρεασμένοι από το AI
+
+Τα δεδομένα δεν επιβεβαιώνουν οποιαδήποτε ανεργία από το AI και αντιθέτως φαίνεται οι λιγότερο επηρεασμένοι να σημειώνουν υψηλότερα ποσοστά ανεργίας.
+-->
+
 ---
 
 ## Opposite point of view
@@ -957,6 +1203,10 @@ More unemployment for the least exposure workers. <sup>[48][48]</sup>
 Compared to previous technological revolutions, experts say AI is chipping away at many white-collar jobs, including coding and marketing roles, and allowing companies to reduce hiring and improve productivity with fewer workers. <sup>[54][54]</sup>
 
 ![bg w:400 right:30%](media/white-collar.png)
+
+<!--
+Η αντίθετη πλευρά ισχυρίζεται ότι πρόκειται να μειωθούν οι "White Collar" δουλειές επιτρέποντας τις εταιρίες να ελαχιστοποιήσουν τα κόστη τους ενώ διατηρούν υψηλά την αποδοτικότητά τους
+-->
 
 ---
 
@@ -967,6 +1217,10 @@ Compared to previous technological revolutions, experts say AI is chipping away 
 - In affected professions experience is appreciated <sup>[55][55]</sup>
 
 ![bg right:50% w:650](media/College_Grad_Graph.webp)
+
+<!--
+Μια ακόμη έρευνα πάνω στο θέμα προβάλλει τους αποφοίτους να έχουν μεγαλύτερο ποσοστό ανεργίας από το συλλογικό εργατικό δυναμικό, για πρώτη φορά στη σύγχρονη ιστορία 
+-->
 
 ---
 
@@ -988,6 +1242,12 @@ More than 50 active groups across 17 states targeted 30 projects during that tim
 </div>
 </div>
 
+<!--
+Καθ'όλη την Αμερική παρατηρούνται πολλές πορείες που τοποθετούνται κατά της κατασκευής datacenters κοντά στην περιοχή τους.
+
+Ως αποτέλεσμα παραπάνω τα 2/3 από 30 πρότζεκτ έχουν σταματήσει.
+-->
+
 ---
 
 ## Ownership
@@ -1002,19 +1262,33 @@ Cloud services instigate subscription based models which degrade ownership.
 
 ![bg w:500 right:40%](media/own-nothing.webp)
 
+<!--
+Χρονικά ταυτιζόμαστε και με μια συστημική προσπάθεια να εξαλειφθεί η έννοια της ιδιωτικής περιουσίας προκειμένου να μεγιστοποιηθεί το κέρδος των εταιριών.
+
+Η γενική μας στροφή προς τις υποδομές νέφους, μια εκ των οποίων είναι και το AI οδηγεί σε:
+- Συνδρομητική λογική υπηρεσιών
+- Απόλυτη εξάρτηση από τον πάροχο, ο οποίος εχει τη δυνατότητα να αφαιρέσει δεδομένα (πχ παιχνίδια απο τη βιβλιοθήκη του χρήστη), να αυξήσει την τιμή της συνδρομής και άλλα
+- Και δυνητικά λιγότερο επεξεργαστικά ισχυρές συσκευές οι οποίες δεν χρειάζονται ισχυρό υλισμικό για να συνδεθούν απλά σε έναν server
+- Με μια δυστοπική απόπειρα το Windows 365 Link, ένας υπολογιστής ο οποίος δεν μπορεί να λειτουργήσει αν δεν συνδεθεί σε ένα Virtual Desktop στο νέφος.
+-->
+
 ---
 
 # Datacenter Case Study <i class="fa-solid fa-server"></i>
 
 The datacenters that are responsible for running the world's cloud services and facilitating the training of the most advanced LLMs
 
+<!--
+Ώρα να δούμε στην πράξη μερικές εγκαταστάσεις όπου εκπαιδεύονται και τρέχουν LLMs στην Αμερική.
+-->
+
 ---
 
 ## Map
 
-![bg right:70% w:850](media/datacenter-map.jpg)
+![bg right:66% w:850](media/datacenter-map.jpg)
 
-Most Activity
+Most Datacenters <sup>[71][71]</sup>
 
 |<i class="fa-solid fa-ranking-star"></i>  | State |
 |-|-|
@@ -1024,25 +1298,46 @@ Most Activity
 | 4 |Illinois |
 | 5 |Ohio |
 
+<!--
+Αυτός είναι ο χάρτης με τα datacenters όλης της αμερικής το 2025
+
+Οι περιοχές με τα περισσότερα είναι:
+- Η Βιρτζίνια (μπλε)
+- Το Τέξας (πράσινο)
+- Η Καλιφόρνια (κόκκινο)
+- Το Ιλλινόις (ροζ)
+- Και το Οχάιο (γαλάζιο)
+-->
+
 ---
 
 ## LLM Facilities <i class="fa-solid fa-industry"></i>
 
 | Datacenter | Location | Company | LLM |
 | ---------- | -------- | ------- | --- |
-| Stargate Project |  Abilene, Texas | <center> OpenAI, Oracle <center> | ChatGPT |
-| Colossus | <center> Memphis </center> | <center> xAI </center> | Grok |
+| Stargate Project |  **Abilene**, Texas | <center> OpenAI, Oracle <center> | ChatGPT |
+| Colossus | <center> **Memphis**, Tennessee</center> | <center> xAI </center> | Grok |
 | Hyperion | <center> Louisiana </center> | <center> Meta </center> | Llama |
 | Google Datacenter | <center> <i class="fa-solid fa-earth-americas"></i> </center> | <center> Google <center> | Gemini |
-| Fire-Flyer AI Cluster | <center> Zhejiang </center> | <center> Fire-Flyer </center> | Deepseek |
+| Fire-Flyer AI Cluster | <center> **Zhejiang**, China </center> | <center> Fire-Flyer </center> | Deepseek |
 
-![bg w:300 right:16%](media/datacenter.webp)
+<!--
+Αυτά είναι μερικά από τα Datacenters τα οποία τρέχουν (ή θα τρέχουν) μερικά από τα πιο διαδεδομένα LLM ανά τον κόσμο
+
+(Αναφορά στο πίνακα)
+
+Σημείωση: Τα datacenters της Google είναι πολλά και βρίσκονται σε όλο το κόσμο
+-->
 
 ---
 
 ## Colossus
 
 ![bg h:800 left:69%](media/xAI-Colossus-ai-upscale.jpeg)
+
+<!--
+Αρχινούμε την ανάλυσή μας με τις τρεις εγκαταστάσεις Colossus 1, 2 και MACROHARDRR  
+-->
 
 ---
 
@@ -1314,6 +1609,10 @@ Net annual nitrogen oxide emission reductions of up to 296 tons by 2032,” <sup
 
 Datacenter construction projects promising to deliver the world to the new age of ai augmented computation.
 
+<!--
+Τέλος θα δούμε 
+-->
+
 ---
 
 ## Hyperion
@@ -1402,7 +1701,11 @@ End goal being 10GW of combined capacity (4.5GW natural gas turbines). <sup>[66]
 
 Are there any questions? 
 
-<!-- Οι σύνδεσμοι της βιβλιογραφίας βρίσκονται στο raw HTML αρχείο καθώς και στα αλληλεπιδράσιμα νούμερα εντός της παρουσίασης -->
+<!--
+Σας ευχαριστώ πολύ για την προσοχής σας!
+
+Οι σύνδεσμοι της βιβλιογραφίας βρίσκονται στο raw HTML αρχείο καθώς και στα αλληλεπιδράσιμα νούμερα εντός της παρουσίασης 
+-->
 
 [1]: https://youtu.be/_bP80DEAbuo "Datacenters Behaving Like Acoustic Weapons - Benn Jordan 2026"
 
@@ -1543,3 +1846,5 @@ Are there any questions?
 [69]: https://epoch.ai/data/data-centers "Frontier Data Centers"
 
 [70]: https://www.tomshardware.com/tech-industry/artificial-intelligence/musks-colossus-is-fully-operational-with-200-000-gpus-backed-by-tesla-batteries-phase-2-to-consume-300-mw-enough-to-power-300-000-homes "Musk’s Colossus is fully operational with 200,000 GPUs backed by Tesla batteries — Phase 2 to consume 300 MW, enough to power 300,000 homes - TomsHardware"
+
+[71]: https://www.visualcapitalist.com/mapped-u-s-states-with-the-most-data-centers-in-2025/ "Mapped: U.S. States With the Most Data Centers in 2025 - Visual Capitalist"
