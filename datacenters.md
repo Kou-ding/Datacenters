@@ -161,7 +161,12 @@ City main line <u>isn't enough</u>. This necessitates the use of local energy ge
 - Οι γαιάνθρακες οι οποίο χρησιμοποιούνται κυρίως στην Κίνα
 - Το diesel
 - Και μακράν το πιο δημοφιλές το φυσικό αέριο. Συγκεκριμένα το CNG, αλλιώς γνωστό και ως μεθάνιο. Οι άλλες υποκατηγορίες του είναι το ακατέργαστο φυσικό αέριο, το LPG και αέρια χαμηλών BTU.
-Παράλληλα υπάρχουν και οι ανανεώσιμες πηγές ενέργειας
+Παράλληλα υπάρχουν και οι ανανεώσιμες πηγές ενέργειας όπως:
+- Ηλιακή
+- Αιολική
+- Πυρηνική
+- Γεωθερμική
+Οι οποίες προς το παρόν προέρχονται από την ανάλυση των κεντρικών μονάδων παραγωγής ηλεκτρικής ενέργειας, όμως υπάρχουν σχέδια για on-site φωτοβολταϊκά, ανεμογεννήτριες κλπ. Η κατασκευή τους αναμένεται να δρομολογηθεί καθώς οι περισσότερες συμφωνίες αυτή τη στιγμή ειναι με κεντρικούς σταθμούς.
 -->
 
 ---
@@ -179,7 +184,10 @@ But!
 ![bg right:30%](media/xai-solar-farm-colossus-data-center.jpg)
 
 <!--
-
+Η κατανάλωση ενός μεγάλου datacenter αυτή τη στιγμή βρίσκεται κοντά στα 2 GW.
+Έτσι εύλογα γεννιέται η απορία: 
+- Μπορεί να ονομαστεί η παραγωγή που επιτελείται στις εγκαταστάσεις τους διανεμημένη?
+Οι μορφές ενέργειας που καλύπτουν και θα καλύψουν τις ανάγκες τους μπορούν να χαρακτηριστούν διανεμημένες πηγές ενέργειας (πχ φωτοβολταϊκά, μικροί αεριοστρόβιλοι αλλά η κλίμακα αυτών είναι απαγορευτική για να μπορέσουν να ικανοποιήσουν την προϋπόθεση να είναι μικρές καθώς επίσης δεν είναι απαραίτητα συνδεδεμένες με το grid. Προς το παρόν μόνο για την κάλυψη των ενεργειακών αναγκών των εγκαταστάσεων και δεν δίνουν τίποτα πίσω στο δίκτυο ενώ δεν υπάρχουν και οι ανάλογες υποδομές. 
 -->
 
 ---
@@ -208,17 +216,30 @@ Descending Capacity Order
 </div>
 </div>
 
+<!--
+Χαρακτηριστικά μπορούμε να δούμε στις κεντρικές μονάδες παραγωγής ηλεκτρικής ενέργειας στο Texas, όπου βρίσκεται μεγάλο μέρος των datacenter, ότι το capacity φτάνει μέχρι περίπου τα 2 GW.
+Ίδια τάξη κλίμακας με τα datacenters. 
+-->
+
 ---
 
 ## Fossil fuel candidates <i class="fa-solid fa-oil-well"></i>
 
-Turbines can be powered by:
+Generators can be powered by:
 
 - **Diesel**
 - **Field gas**: Gas extracted from a production well before it enters a natural gas processing plant <sup>[31][31]</sup>.
 - **CNG**: <mark>Compressed Natural Gas</mark>, mainly methane compressed at a pressure of 200 to 248 bars <sup>[32][32]</sup>.
 - **LPG**: <mark>Liquefied Petroleum Gas</mark>, a mixture of propane and butane liquefied at 15 °C and a pressure of 1.7-7.5 bars <sup>[32][32]</sup>.
 - **LowBTU gases**: Natural gas, which at the wellhead has a gross heating value $\le 450$ BTU. Part of petroleum refining and crude oil, natural gas production.
+
+<!--
+Εξειδικεύοντας στις ορυκτά καύσιμα βλέπουμε ότι
+- Το ακατέργαστο φυσικό αέριο είναι το φυσικό αέριο πριν επεξεργαστεί
+- Το CNG είναι κατά βάση μεθάνιο συμπιεσμένο σε πιέσεις της τάξης των 100 με 248 bars
+- Το LPG είναι μια μίξη απο προπάνιο και βουτάνιο υγροποιημένα στους 15 °C σε συνθήκες πίεσης 1.7 με 7.5 bars
+- Και τέλος τα αέρια χαμηλής θερμογόνου δύναμης αποτελούν παραπροϊόν διύλισης υδρογονανθράκων(πετρέλαιο και αργό πετρέλαιο) 
+-->
 
 ---
 
@@ -230,9 +251,17 @@ Turbines can be powered by:
 | Energy density | Lower caloric value | Higher caloric value |
 | Cost | Cheaper | More expensive |
 | Emissions| Less than LPG | Less than gasoline |
-| Safety | Disperses quickly | Settles to ground, but highly inflammable |
+| Safety | Disperses quickly | Settles to ground, and highly inflammable |
 
-CNG risk of ignition is low so even though LPG is highly inflammable it is the more likely of the two to ignite.
+CNG risk of ignition is significantly lower since LPG is both highly inflammable and settles to ground.
+
+<!--
+Σε μια σύγκριση των δύο πιο διαδεδομένων εναλλακτικών:
+- Το CNG έχει χαμηλότερη θερμιδική αξία από το LPG όμως
+- Είναι φθηνότερο  
+- Παράγει λιγότερους ρίπους
+- Και διαχέεται στο χώρο σε περίπτωση ατυχήματος κάνοντας το πιο δύσκολο να αναφλεχθεί συγκριτικά με το LPG το οποίο είναι ιδιαίτερα εύλεκτο και παραμένει στο έδαφος. 
+-->
 
 ---
 
@@ -240,11 +269,20 @@ CNG risk of ignition is low so even though LPG is highly inflammable it is the m
 
 Optimizing performance through efficient cable routing
 
+<!--
+Συνεχίζοντας θα εξετάσουμε τις τοπολογίες δικτύου που χρησιμοποιούνται για την επίτευξη υψηλότερων επιδόσεων
+-->
+
 ---
 
 ## Definition
 
 In datacenter when using the term network topology we refer to the <mark>structure and layout of networking equipment</mark> and its relationship to servers. <sup>[57][57]</sup>
+
+
+<!--
+Όταν μιλάμε για τοπολογία δικτύου εννοούμε την δομή και διάταξη υλικού δικτύωσης με σημείο αναφοράς τους servers.
+-->
 
 ---
 
@@ -255,6 +293,13 @@ In datacenter when using the term network topology we refer to the <mark>structu
 3. **Cost-Effectiveness**: Effective use of networking hardware as to not overspend meaninglessly or even reduce performance
 4. **Security**: Server isolation and malicious traffic filtering
 
+<!--
+Οι βασικοί λόγοι για τους οποίους είναι σημαντική η βελτιστοποίηση δικτύου είναι:
+- Η αύξηση των επιδόσεων μειώνοντας την καθυστέρηση την καθυστέρηση επικοινωνίας μεταξύ server και εξωτερικών τερματικών κόμβων, δηλαδή χρηστών.
+- Η δυνατότητα επέκτασης του δικτύου για την κάλυψη αυξημένων αναγκών της εγκατάστασης
+- Η ελαχιστοποίηση του κόστους για την επίτευξη συγκεκριμένων επιδόσεων
+- Και τέλος η αναβάθμιση της ασφάλειας μέσω της απομόνωσης συγκεκριμένων τμημάτων του δικτύου
+-->
 ---
 
 ## Broadcasting vs Fiber Switching
@@ -387,6 +432,9 @@ A mix and match of the aforementioned topologies so as to cover the specific sce
 
 Bringing down the temperature to avoid thermal throttling
 
+<!--
+Τώρα θα ασχοληθούμε με τις τεχνολογίες ψύξης που μας επιτρέπουν να διατηρήσουμε την απόδοση υψηλή αποτρέποντας το υλισμικό μας να υπερβεί τις θερμοκρασίες λειτουργίας του. 
+-->
 ---
 
 ## Water <i class="fa-solid fa-droplet"></i> vs Air <i class="fa-solid fa-fan"></i>
@@ -407,18 +455,34 @@ Thus the more energy efficient solution depend on a more and more direct heat di
 </div>
 </div>
 
+<!--
+Μια βασική ερώτηση είναι ποιο μέσο απομακρύνει ευκολότερα τη θερμότητα
+- Το νερό 
+- Ή ο αέρας
+Κρίνοντας από της τιμές θερμαγωγιμότητας βλέπουμε ότι το νερό είναι τουλάχιστον μια τάξη μεγέθους μεγαλύτερο
+
+Όμως τι είναι θερμαγωγιμότητα?
+-->
+
 ---
 
 ## Thermal conductivity <i class="fa-solid fa-temperature-high"></i>
 
 The thermal conductivity of a material is a measure of its ability to conduct heat. It quantifies the proportionality between the heat flux $q$ and the temperature gradient $\nabla T$ in the direction of heat transport.
 
-$$ q = -k \nabla T \ [W/mK]$$
+$$ -k =  \frac{q}{\nabla T} \ [W/mK]$$
 
 - $q \ [W/m^2]$: heat flow rate per unit area
 - $\nabla T \ [K/m]$: temperature gradient in the direction of heat transport
 
 ![bg w:220 right:20%](media/fireball.png)
+
+<!--
+Η θερμαγωγιμότητα είναι η ικανότητα ενός υλικού να άγει θερμότητα. Μαθηματικά ορίζεται ως:
+- την αναλογία της ροής θερμότητας ανά μονάδα επιφάνειας 
+δια 
+- το gradient της θερμοκρασίας κατά τη φορά μετάδοσης της θερμότητας
+-->
 
 ---
 
@@ -433,8 +497,15 @@ $$ q = -k \nabla T \ [W/mK]$$
     - Copper: $12808\$/t$
     - Aluminum: $3385\$/t$
 
-![bg left:50% w:600](media/copper-vs-aluminum.png
-)
+![bg left:50% w:600](media/copper-vs-aluminum.png)
+
+<!--
+Στη συνέχεια αφού έχουμε διαπιστώσει ότι το νερό είναι προτιμότερο σε απαιτητικές εφαρμογές...
+Ποιο υλικό θέλουμε να είναι σε επαφή με τα τις CPU, GPU, Μνήμες κλπ?
+Ο χαλκός ή το αλουμίνιο?
+Από πλευράς απόδοσης η θερμαγωγιμότητα του χαλκού είναι διπλάσια και για αυτό επιλέγεται.
+Αν υπάρχει και ο παράγοντας του κόστους, η τωρινές τιμές της αγοράς για τα δύο υλικά τοποθετούν τον χαλκό σε 4-πλάσια τιμή σε σχέση με το αλουμίνιο.
+-->
 
 ---
 
@@ -444,6 +515,10 @@ Galvanic is an electrochemical process that occurs when two metals with differen
 
 ![bg left:50% h:500](media/Galvanic_Series_Chart.jpg)
 
+<!--
+Προσοχή όμως στην μίξη των δύο καθώς υπάρχει ο κίνδυνος της γαλβανικής διάβρωσης η οποία οφείλεται στη διαφορετική ηλετκροχημική δραστηριότητα των δύο μετάλλων.
+-->
+
 ---
 
 ### Galvanic Corrosion <i class="fa-solid fa-triangle-exclamation"></i>
@@ -451,6 +526,10 @@ Galvanic is an electrochemical process that occurs when two metals with differen
 The more noble, passive metal (copper or nickel) drives the corrosion of the active, less noble metal (aluminum), where the passive metal remains fairly unharmed. <sup>[33][33]</sup>
 
 ![bg left:50% w:400 ](media/galvanic-corrosion.png)
+
+<!--
+Το πιο ευγενές δηλαδή αδρανές μέταλλο (δηλαδή ο Χαλκός) ωθεί το πιο δραστήριο (δηλαδή το Αλουμίνιο) να διαβρωθεί.
+-->
 
 ---
 
@@ -463,6 +542,15 @@ The more noble, passive metal (copper or nickel) drives the corrosion of the act
 5. Multi-Phase Immersion Cooling <sup>[38][38]</sup>
 
 ![bg w:400 right:45%](media/cooling_methods_compared.png)
+
+<!-- 
+Καταλήγουμε σε 5 βασικούς τύπους ψύξης στα datacenters
+- Την CRAC που χρησιμοποιεί μονάδες air conditioning
+- Ψύξη μέσω εξάτμισης
+- Άμεση ψύξη κατευθείαν στο τσιπ
+- Ψύξη βύθισης μίας φάσης 
+- Και ψύξη βύθισης πολλαπλών φάσεων
+-->
 
 ---
 
@@ -488,6 +576,8 @@ The origin of datacenter cooling. Rooms dedicated to housing IT equipped with tr
 
 </div>
 </div>
+
+
 
 ---
 
